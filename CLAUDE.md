@@ -1,101 +1,89 @@
-# MazyOS — Sistema operacional do negócio
+# Colchões e Cia — MazyOS
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
-
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+Empresa de varejo de colchões e produtos de dormitório, posicionada para o público B, C e D. Equipe de 3 pessoas: dono (administração), Otávio (marketing) e Joaquim (vendas). Gargalo atual: criação de conteúdo e marketing.
 
 ---
 
 ## Contexto do negócio
 
-No início de toda conversa, ler os seguintes arquivos (quando existirem
-e estiverem preenchidos):
+No início de toda conversa, ler os seguintes arquivos (quando existirem e estiverem preenchidos):
 
-1. `_memoria/empresa.md` — quem é o usuário, o que faz, como funciona o negócio
+1. `_memoria/empresa.md` — quem é a Colchões e Cia, o que vende, equipe, público
 2. `_memoria/preferencias.md` — tom de voz, estilo de escrita, o que evitar
-3. `_memoria/estrategia.md` — foco atual, prioridades, prazos
+3. `_memoria/estrategia.md` — foco atual, prioridades, o que tá segurando o crescimento
 
-Usar essas informações como base pra qualquer resposta ou decisão. Ao
-sugerir prioridades, formatos ou abordagens, considerar o foco atual
-descrito em `estrategia.md`.
+Usar essas informações como base pra qualquer resposta ou decisão. Ao sugerir prioridades, formatos ou abordagens, considerar o foco atual descrito em `estrategia.md`.
 
-Pra qualquer tarefa visual (carrossel, post, landing page), consultar
-`identidade/design-guide.md` como referência de estilo.
+Pra qualquer tarefa visual (carrossel, post, landing page), consultar `identidade/design-guide.md` como referência de estilo — cores `#0064A6` e `#00AFEF`, fonte Arial Rounded MT Bold.
 
-Não é necessário listar o que foi lido nem confirmar a leitura. Apenas
-usar o contexto naturalmente.
+Não é necessário listar o que foi lido nem confirmar a leitura. Apenas usar o contexto naturalmente.
+
+---
+
+## O que é esse workspace
+
+Operação da Colchões e Cia. Marketing, vendas, conteúdo e administração num só lugar.
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é a empresa, como falamos, foco atual
+- `identidade/` — marca aplicada em tudo que o sistema gera
+- `marketing/` — campanhas, conteúdo, mídia paga
+- `saidas/` — documentos pontuais gerados
+- `dados/` — arquivos a analisar (CSV, XLSX, PDF)
+- `scripts/` — automações e utilitários
+
+---
+
+## Sobre a empresa
+
+Colchões e Cia é uma empresa de varejo de produtos para dormitório. Atua no segmento popular (público B, C, D), com foco em acessibilidade e volume. Vende colchões de espuma, colchões de molas, cama box, cabeceiras e box baú. Faz parte de um grupo com outras unidades voltadas a públicos de maior poder aquisitivo.
+
+**Equipe:**
+- Dono — administração geral
+- Otávio — marketing
+- Joaquim — vendas
+
+---
+
+## Tom de voz
+
+Direto, simples, grudento. Referência real: "Pensou Colchão Colchões e Cia!" — curto, sem enrolação, fácil de gravar. Comunicação honesta, sem promessa vazia, sem jargão de guru.
+
+Evitar: incoerência, falta de transparência, brincadeiras fora de contexto, promessas vazias, "alavancar", "sinergia", tom formal demais.
 
 ---
 
 ## Fluxo de trabalho
 
-Antes de executar qualquer tarefa, verificar se existe skill relevante
-em `.claude/skills/`. Se encontrar, seguir as instruções da skill. Se
-não encontrar, executar a tarefa normalmente.
+Antes de executar qualquer tarefa, verificar se existe skill relevante em `.claude/skills/`. Se encontrar, seguir as instruções da skill. Se não encontrar, executar a tarefa normalmente.
 
-Ao concluir uma tarefa que não tinha skill mas parece repetível (o
-usuário provavelmente vai pedir de novo no futuro), perguntar:
+Ao concluir uma tarefa que não tinha skill mas parece repetível, perguntar:
 
 > "Isso pode virar uma skill pra próxima vez. Quer que eu crie?"
-
-Não perguntar pra tarefas pontuais ou perguntas simples. Só quando o
-padrão de repetição for claro.
 
 ---
 
 ## Aprender com correções
 
-Quando o usuário corrigir algo, melhorar uma resposta ou dar uma
-instrução que parece permanente (frases como "na verdade é assim", "não
-faça mais isso", "prefiro assim", "sempre que...", "evita...", "da
-próxima vez..."), perguntar:
+Quando o usuário corrigir algo ou dar instrução permanente ("na verdade é assim", "não faça mais isso", "prefiro assim", "sempre que...", "evita..."), perguntar:
 
 > "Quer que eu salve isso pra não precisar repetir?"
 
-Se sim, identificar onde faz mais sentido salvar:
-
-- **Sobre o negócio** (clientes, serviços, mercado) → `_memoria/empresa.md`
-- **Sobre preferências e estilo** (tom de voz, formato, o que evitar) → `_memoria/preferencias.md`
-- **Sobre prioridades e foco** (projetos, metas, prazos) → `_memoria/estrategia.md`
+Se sim, identificar onde salvar:
+- **Sobre o negócio** → `_memoria/empresa.md`
+- **Sobre preferências e estilo** → `_memoria/preferencias.md`
+- **Sobre prioridades e foco** → `_memoria/estrategia.md`
 - **Regra de comportamento nessa pasta** → próprio `CLAUDE.md`
-
-Salvar com uma linha nova clara, sem reformatar o arquivo inteiro.
-Confirmar mostrando a linha adicionada.
-
-Não perguntar se a correção for óbvia de contexto imediato (ex: "na
-verdade o arquivo se chama X"). Só perguntar quando a informação tiver
-valor duradouro.
 
 ---
 
 ## Manter contexto atualizado
 
-Ao terminar uma tarefa que mudou algo relevante (cliente novo, skill
-nova, mudança de foco, processo novo, ferramenta instalada, estrutura
-alterada), perguntar:
+Ao terminar tarefa que mudou algo relevante, perguntar:
 
 > "Isso mudou algo no teu contexto. Quer que eu atualize a memória?"
 
-Se sim, identificar o que atualizar:
-
-- **Cliente, serviço, ferramenta, equipe** → `_memoria/empresa.md`
-- **Mudança de prioridade ou foco** → `_memoria/estrategia.md`
-- **Tom ou estilo** → `_memoria/preferencias.md`
-- **Pasta, regra de organização, skill criada** → `CLAUDE.md`
-- **Visual (cores, fontes, logo)** → `identidade/design-guide.md`
-
-Mostrar o que vai mudar antes de salvar. Não reformatar o arquivo
-inteiro, só adicionar ou editar a linha relevante.
-
-**Quando NÃO perguntar:**
-- Tarefas pontuais sem impacto no contexto (escrever um email avulso, criar um post)
-- Perguntas simples ou conversas sem ação
-- Mudanças já salvas pelo bloco "Aprender com correções"
-
-**Dica:** rode `/atualizar` pra uma varredura completa quando houver dúvida.
+**Quando NÃO perguntar:** tarefas pontuais sem impacto no contexto, perguntas simples, mudanças já salvas.
 
 ---
 
@@ -103,13 +91,7 @@ inteiro, só adicionar ou editar a linha relevante.
 
 Quando o usuário pedir skill nova:
 
-1. Verificar se existe template relevante em `templates/skills/`. Se
-   existir, usar como base e adaptar pro contexto
-2. Perguntar se é específica desse projeto ou útil em qualquer:
-   - Específica → `.claude/skills/nome-da-skill/SKILL.md` (local)
-   - Universal → `~/.claude/skills/nome-da-skill/SKILL.md` (global)
-3. Ler `_memoria/empresa.md` e `_memoria/preferencias.md` pra calibrar
-   o conteúdo da skill ao contexto do negócio
-4. Se a skill precisar de arquivos de apoio (templates, exemplos),
-   criar dentro da pasta da skill
-5. Seguir o fluxo da skill-creator nativa do Claude Code
+1. Verificar se existe template relevante em `templates/skills/`
+2. Perguntar se é específica desse projeto ou útil em qualquer contexto
+3. Ler `_memoria/empresa.md` e `_memoria/preferencias.md` pra calibrar ao contexto da Colchões e Cia
+4. Seguir o fluxo da skill-creator nativa do Claude Code

@@ -8,52 +8,62 @@
 
 ## Cores
 
-- **Fundo principal:**
-
-- **Cor de destaque / CTA:**
-
-- **Texto principal:**
-
-- **Fundo alternativo / cards:**
-
-- **Cor proibida:**
+- **Cor principal (azul escuro):** `#0064A6` — RGB (0, 100, 166) — PANTONE 647 C — CMYK C100 M60
+- **Cor secundária (azul claro):** `#00AFEF` — RGB (0, 175, 239) — PANTONE 312 C — CMYK C100
+- **Fundo principal:** Branco `#FFFFFF`
+- **Fundo alternativo escuro:** Preto `#1E1E1E` (usado no manual para versão negativa)
+- **Cor de destaque / CTA:** Azul claro `#00AFEF`
+- **Texto principal:** Azul escuro `#0064A6` ou preto `#1E1E1E`
+- **Cor proibida:** Qualquer cor que não seja derivada da paleta azul da marca
 
 ---
 
 ## Tipografia
 
-- **Títulos e destaques:**
-
-- **Corpo, subtítulos e botões:**
-
-- **Peso do título:**
+- **Títulos e destaques:** Arial Rounded MT Bold
+- **Corpo, subtítulos e botões:** Arial Rounded MT Bold (mesma família, variações de peso e tamanho)
+- **Peso do título:** Bold
+- **Observação:** O manual indica espaço entre letras, acentuação e detalhes customizados na logo — respeitar esses ajustes na logo, não recriar tipograficamente.
 
 ---
 
 ## Estilo geral
 
+Marca amigável, acessível, popular. O logo tem personalidade (zzz de sono, & estilizado com gota d'água) mas é legível e direto. Sem excesso de ornamento. Comunicação visual limpa, fundo branco ou azul, sempre com a paleta oficial.
+
 ---
 
 ## Elementos-chave
 
-- Bordas:
-- Border-radius dos cards:
-- Botões:
-- Sombras:
+- Bordas: limpas, sem excesso de decoração
+- Border-radius dos cards: suave (arredondado, combinando com a tipologia rounded da marca)
+- Botões: azul escuro `#0064A6` com texto branco, ou azul claro `#00AFEF`
+- Sombras: leves, se necessário
 
 ---
 
 ## O que NUNCA fazer
 
+- Usar cores fora da paleta oficial
+- Distorcer ou recriar o logo manualmente
+- Usar fontes serifadas ou muito finas
+- Aplicar efeitos de gradiente complexos que não estejam no manual
+- Misturar o logo colorido com fundo de cor conflitante (usar versão branca em fundos escuros)
+
 ---
 
 ## Logo
 
-- **Arquivo:** *(ex: identidade/logo.png ou identidade/logo.svg)*
-- **Versão pra fundo escuro:** *(se tiver — ex: identidade/logo-branco.png)*
-- **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
+- **Arquivo horizontal:** `identidade/logo.png` (ou `.svg` quando disponível)
+- **Formato horizontal:** colcHões&cia numa linha — uso principal
+- **Formato empilhado:** colcHões / &cia em duas linhas — uso em espaços quadrados (avatar, ícone)
+- **Versão pra fundo escuro:** logo em branco (ver manual página "Negativo")
+- **Versão pra fundo azul:** logo em branco (ver manual página "Fundo Azul")
+- **Onde usar:** slide final do carrossel (CTA), header de propostas, posts de Instagram
 - **Tamanho sugerido:** largura entre 120-200px nos HTMLs
 
 ---
 
 ## Observações adicionais
+
+Manual de marca desenvolvido pela Audace Propaganda. Dois formatos de logo disponíveis: horizontal (principal) e empilhado (secundário/avatar). Consultar o PDF `Manual_Logo_Colchoes&Cia.pdf` para referência completa de aplicações.
