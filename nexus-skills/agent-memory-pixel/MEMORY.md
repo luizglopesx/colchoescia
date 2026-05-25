@@ -1,0 +1,3 @@
+- [Campanha Super Bota Fora Maio 2026](project_super-bota-fora.md) — campanha ativa 15–30/05/2026, peças prontas, legendas precisam refinamento
+- [Perfil do usuário — Luiz Gustavo Lopes](user_luiz-gustavo.md) — proprietário da Senhor Colchão, loja física de colchões
+- [Integração Meta — Publicação e Campanhas](project_meta_integration.md) — credenciais, módulos e skill configurados em 18/05/2026 para agendamento automático
