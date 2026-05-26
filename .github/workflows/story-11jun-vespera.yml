@@ -1,0 +1,38 @@
+name: Story Instagram — 11/06 Véspera
+
+on:
+  schedule:
+    - cron: '0 21 11 6 *'  # 11/06 às 18:00 BRT (21:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  publish-story:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publicar Story no Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+        run: |
+          IMAGE_URL="https://i.imgur.com/VSNaHz6.png"
+
+          echo "📸 Criando container do story..."
+          CONTAINER=$(curl -s -X POST \
+            "https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media" \
+            -d "media_type=STORIES" \
+            -d "image_url=${IMAGE_URL}" \
+            -d "access_token=${IG_TOKEN}")
+
+          echo "Resposta: $CONTAINER"
+          CREATION_ID=$(echo $CONTAINER | python3 -c "import sys,json; print(json.load(sys.stdin)['id'])")
+
+          echo "✅ Container criado: $CREATION_ID"
+          echo "📤 Publicando story..."
+
+          RESULT=$(curl -s -X POST \
+            "https://graph.facebook.com/v21.0/${IG_ACCOUNT_ID}/media_publish" \
+            -d "creation_id=${CREATION_ID}" \
+            -d "access_token=${IG_TOKEN}")
+
+          echo "Resultado: $RESULT"
+          echo "🎉 Story publicado com sucesso!"
