@@ -27,3 +27,6 @@ dados/*
 
 # Credenciais — nunca versionar
 .env
+
+# AI Image Creator — histórico de custos e logs locais
+.ai-image-creator/
