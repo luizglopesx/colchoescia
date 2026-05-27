@@ -6,7 +6,7 @@ type: project
 
 Integração completa com a Meta Graph API configurada em 18/05/2026.
 
-**App Meta:** `Senhor Colchao - Publicacao` (ID: `1248304820712155`)
+**App Meta:** `Senhor Colchao - Publicacao` (ID configurado via `META_APP_ID` no `.env`)
 Casos de uso: Gerenciar mensagens e conteúdo no Instagram + Gerenciar tudo na sua Página.
 
 ## Contas configuradas no .env
