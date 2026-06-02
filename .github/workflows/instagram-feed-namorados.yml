@@ -1,0 +1,31 @@
+name: Instagram Feed — Namorados (Colchões & Cia 2026)
+
+on:
+  schedule:
+    - cron: '0 21 3 6 *'    # 03/06 às 18h BRT (21h UTC)
+    - cron: '0 21 11 6 *'   # 11/06 às 18h BRT (21h UTC)
+    - cron: '0 12 12 6 *'   # 12/06 às 09h BRT (12h UTC)
+  workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Forçar data (DD/MM, ex: 03/06) — deixe vazio para usar hoje'
+        required: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publicar no Feed do Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+        run: |
+          DATE_ARG="${{ github.event.inputs.date_override }}"
+          if [ -n "$DATE_ARG" ]; then
+            python3 .github/scripts/post_instagram_feed.py "$DATE_ARG"
+          else
+            python3 .github/scripts/post_instagram_feed.py
+          fi
