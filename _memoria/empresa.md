@@ -13,7 +13,7 @@
 - Otávio — marketing
 - Joaquim — vendas
 
-**Ferramentas:**
+**Ferramentas:** Meta Graph API (publicação Instagram + Facebook), GitHub Actions (automação de posts via cron), Playwright (renderização de HTML em PNG), Claude Code (criação de conteúdo e operação geral)
 **Principais entregas:** Colchões de espuma, colchões de molas, cama box, cabeceiras, box baú
 
 ## Contexto adicional
