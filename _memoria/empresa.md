@@ -16,6 +16,11 @@
 **Ferramentas:** Meta Graph API (publicação Instagram + Facebook), GitHub Actions (automação de posts via cron), Playwright (renderização de HTML em PNG), Claude Code (criação de conteúdo e operação geral)
 **Principais entregas:** Colchões de espuma, colchões de molas, cama box, cabeceiras, box baú
 
+**Contatos:**
+- WhatsApp: (17) 3324-5765
+- Telefone (falar com vendedor): (17) 3325-6039
+- Loja: Rua 20 Esq. Av. 13 - Centro - Barretos
+
 ## Contexto adicional
 
 Empresa posicionada para o público popular (B, C, D). Outras unidades do mesmo grupo atendem públicos de maior poder aquisitivo. O foco aqui é volume e acessibilidade. Gargalo atual é marketing e criação de conteúdo.
