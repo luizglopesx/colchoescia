@@ -1,0 +1,20 @@
+name: Instagram — Vida Útil do Colchão (08/06/2026 12h)
+
+on:
+  schedule:
+    - cron: '0 15 8 6 *'   # 15h UTC = 12h BRT (segunda 08/06)
+  workflow_dispatch:         # permite disparar manualmente para testar
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publicar feed (com texto) e story (só imagem) no Instagram
+        env:
+          SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
+          SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
+        run: python3 marketing/conteudo/post-vida-util-colchao-2026-06/post_instagram.py

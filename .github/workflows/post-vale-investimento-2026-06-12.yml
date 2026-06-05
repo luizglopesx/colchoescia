@@ -1,0 +1,20 @@
+name: Instagram — Vale o Investimento (12/06/2026 12h)
+
+on:
+  schedule:
+    - cron: '0 15 12 6 *'   # 15h UTC = 12h BRT (sexta 12/06)
+  workflow_dispatch:         # permite disparar manualmente para testar
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publicar feed (com texto) e story (só imagem) no Instagram
+        env:
+          SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
+          SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
+        run: python3 marketing/conteudo/post-vale-investimento-2026-06/post_instagram.py

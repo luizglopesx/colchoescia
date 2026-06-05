@@ -16,7 +16,7 @@ Na Colchões e Cia você escolhe com calma, prova o colchão na loja e só leva 
 ---
 
 🛏️ Colchão de espuma e molas · Cama box · Cabeceira · Box baú
-📲 Chama agora: (17) 3324-5765
+📲 Chama agora: (17) 3325-6039
 📍 Rua 20 Esq. Av. 13 - Centro - Barretos
 
 #ColchoesECia #Colchao #HoraDeTrocar #CamaBox #DormirBem #LojaDeColchao #PrecoJusto #Barretos
