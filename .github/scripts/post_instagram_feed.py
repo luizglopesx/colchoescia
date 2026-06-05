@@ -36,7 +36,7 @@ POSTS = {
             "🛏 Cama Box Casal — Molas Ensacadas\n"
             "💳 12x de R$ 132,50 sem juros\n"
             "🚚 Entrega e montagem GRÁTIS\n\n"
-            "👉 Chama no WhatsApp agora: (17) 3325-6039\n"
+            "👉 Chama no WhatsApp agora: (17) 3324-5765\n"
             "📍 Rua 20 Esq. Av. 13 - Centro - Barretos\n\n"
             "Não deixa o presente do namorado(a) pra depois! 💙\n\n"
             "#ColchõesCia #Barretos #OfertaDeNamorados"
