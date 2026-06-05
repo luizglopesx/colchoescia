@@ -23,7 +23,7 @@ POSTS = {
             "✅ Casal — espaço pra dois\n"
             "✅ 12x de R$ 132,50 SEM JUROS\n"
             "✅ Entrega e montagem grátis!\n\n"
-            "📲 Chama agora: (17) 3324-5765\n"
+            "📲 Chama agora: (17) 3325-6039\n"
             "📍 Rua 20 Esq. Av. 13 - Centro - Barretos\n\n"
             "#ColchõesCia #CamaBoxCasal #MolasEnsacadas #Barretos #DiaDoNamorados"
         ),
@@ -36,7 +36,7 @@ POSTS = {
             "🛏 Cama Box Casal — Molas Ensacadas\n"
             "💳 12x de R$ 132,50 sem juros\n"
             "🚚 Entrega e montagem GRÁTIS\n\n"
-            "👉 Chama no WhatsApp agora: (17) 3324-5765\n"
+            "👉 Chama no WhatsApp agora: (17) 3325-6039\n"
             "📍 Rua 20 Esq. Av. 13 - Centro - Barretos\n\n"
             "Não deixa o presente do namorado(a) pra depois! 💙\n\n"
             "#ColchõesCia #Barretos #OfertaDeNamorados"
@@ -49,7 +49,7 @@ POSTS = {
             "A Colchões & Cia deseja que vocês tenham muitas noites de descanso e amor juntos. 🛏\n\n"
             "Obrigado pela confiança! Barretos, a gente ama vocês! 💙\n\n"
             "📍 Rua 20 Esq. Av. 13 - Centro - Barretos\n"
-            "📞 (17) 3324-5765\n\n"
+            "📞 (17) 3325-6039\n\n"
             "#FelizDiaDoNamorados #ColchõesCia #Barretos"
         ),
     },
