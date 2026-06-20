@@ -30,3 +30,6 @@ dados/*
 
 # AI Image Creator — histórico de custos e logs locais
 .ai-image-creator/
+
+__pycache__/
+*.pyc
