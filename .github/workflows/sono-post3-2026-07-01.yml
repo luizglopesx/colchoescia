@@ -13,25 +13,7 @@ jobs:
           python-version: '3.11'
       - name: Publicar Instagram
         env:
-          SOCIAL_INSTAGRAM_1_ACCOUNT_ID: ${{ secrets.SOCIAL_INSTAGRAM_1_ACCOUNT_ID }}
-          SOCIAL_INSTAGRAM_1_TOKEN: ${{ secrets.SOCIAL_INSTAGRAM_1_TOKEN }}
-        run: |
-          python3 .claude/skills/int-instagram/scripts/instagram_publisher.py publish_photo \
-            "https://raw.githubusercontent.com/${{ github.repository }}/main/marketing/conteudo/posts-conteudo-sono/post-casais-colchao-2026-06/post.png" \
-            "Você ri, mas já passou por isso.
-
-Um quer mole, o outro quer firme. Um esquenta à noite, o outro sente frio. Um mexe muito e acorda o outro. A cama vira campo de batalha — e de manhã os dois acordam mal.
-
-A boa notícia: isso tem solução.
-
-A gente tem colchões que equilibram os dois lados, e pode te ajudar a escolher o tamanho e o modelo certo pro casal. Sem compromisso, sem enrolação.
-
-Vem testar. Às vezes uma tarde na loja resolve anos de noite mal dormida.
-
-🛏️ Colchão de espuma e molas · Cama box · Cabeceira · Box baú
-📲 WhatsApp: (17) 3324-5765
-📞 Telefone: (17) 3325-6039
-📍 Rua 20 Esq. Av. 13 - Centro - Barretos
-
-#ColchoesECia #ColchaoDeCasal #DormirBem #Colchao #CamaBox #LojaDeColchao #Barretos" \
-            colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
+          SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
+        run: python3 marketing/conteudo/posts-conteudo-sono/post-casais-colchao-2026-06/post_instagram.py

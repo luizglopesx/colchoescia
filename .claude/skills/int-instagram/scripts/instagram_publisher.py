@@ -95,6 +95,18 @@ def _api_get(path: str, params: dict = None) -> dict:
         return {"error": str(e)}
 
 
+def _wait_until_ready(creation_id: str, token: str, retries: int = 10, interval: int = 5) -> bool:
+    import time
+    for _ in range(retries):
+        status = _api_get(creation_id, {"fields": "status_code", "access_token": token})
+        if status.get("status_code") == "FINISHED":
+            return True
+        if status.get("status_code") == "ERROR":
+            return False
+        time.sleep(interval)
+    return False
+
+
 def publish_photo(account: dict, image_url: str, caption: str) -> dict:
     ig_id = account.get("account_id", "")
     token = _token(account)
@@ -112,6 +124,9 @@ def publish_photo(account: dict, image_url: str, caption: str) -> dict:
     creation_id = create.get("id", "")
     if not creation_id:
         return {"error": "No creation_id returned", "detail": str(create)}
+
+    if not _wait_until_ready(creation_id, token):
+        return {"error": "Media container did not reach FINISHED status", "creation_id": creation_id}
 
     result = _api_post(f"{ig_id}/media_publish", {
         "creation_id": creation_id,
