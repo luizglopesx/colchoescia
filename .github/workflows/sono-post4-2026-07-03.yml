@@ -1,0 +1,37 @@
+name: Instagram — Sono Post 4 (03/07)
+on:
+  schedule:
+    - cron: '0 15 3 7 *'  # 15h UTC = 12h BRT
+  workflow_dispatch:
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publicar Instagram
+        env:
+          SOCIAL_INSTAGRAM_1_ACCOUNT_ID: ${{ secrets.SOCIAL_INSTAGRAM_1_ACCOUNT_ID }}
+          SOCIAL_INSTAGRAM_1_TOKEN: ${{ secrets.SOCIAL_INSTAGRAM_1_TOKEN }}
+        run: |
+          python3 .claude/skills/int-instagram/scripts/instagram_publisher.py publish_photo \
+            "https://raw.githubusercontent.com/${{ github.repository }}/main/marketing/conteudo/posts-conteudo-sono/post-acorda-noite-2026-06/post.png" \
+            "1:39 da manhã. Você acorda sem motivo aparente.
+
+Tenta dormir de novo, vira pro outro lado, não consegue. De manhã acorda destruído.
+
+Pode não ser insônia. Colchão velho retém calor, perde o suporte em pontos específicos e faz o corpo compensar a posição durante a noite — aí você acorda.
+
+Não é frescura. É o colchão te impedindo de dormir direito.
+
+Se isso acontece com frequência, vale a pena vir até a loja. A gente te explica o que pode estar causando e te mostra as opções.
+
+🛏️ Colchão de espuma e molas · Cama box · Cabeceira · Box baú
+📲 WhatsApp: (17) 3324-5765
+📞 Telefone: (17) 3325-6039
+📍 Rua 20 Esq. Av. 13 - Centro - Barretos
+
+#ColchoesECia #Insonia #DormirBem #Colchao #SaudedoSono #LojaDeColchao #Barretos" \
+            colchoes_e_cia

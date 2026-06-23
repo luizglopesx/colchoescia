@@ -1,0 +1,20 @@
+# Legenda — Por que casais brigam por causa do colchão.
+
+## Instagram / Facebook
+
+Você ri, mas já passou por isso.
+
+Um quer mole, o outro quer firme. Um esquenta à noite, o outro sente frio. Um mexe muito e acorda o outro. A cama vira campo de batalha — e de manhã os dois acordam mal.
+
+A boa notícia: isso tem solução.
+
+A gente tem colchões que equilibram os dois lados, e pode te ajudar a escolher o tamanho e o modelo certo pro casal. Sem compromisso, sem enrolação.
+
+Vem testar. Às vezes uma tarde na loja resolve anos de noite mal dormida.
+
+🛏️ Colchão de espuma e molas · Cama box · Cabeceira · Box baú
+📲 WhatsApp: (17) 3324-5765
+📞 Telefone: (17) 3325-6039
+📍 Rua 20 Esq. Av. 13 - Centro - Barretos
+
+#ColchoesECia #ColchaoDeCasal #DormirBem #Colchao #CamaBox #LojaDeColchao #Barretos #VidaACois

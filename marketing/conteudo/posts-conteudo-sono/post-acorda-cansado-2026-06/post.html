@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: #000;
+  }
+
+  /* ── FEED 1080×1350 ── */
+  .feed {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .feed .bg {
+    position: absolute;
+    inset: 0;
+    background: url('../bg-acorda-cansado.png') center top / cover no-repeat;
+  }
+
+  .feed .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.18) 0%,
+      rgba(0,0,0,0.10) 30%,
+      rgba(0,0,0,0.55) 65%,
+      rgba(0,18,45,0.92) 100%
+    );
+  }
+
+  .feed .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 72px 80px;
+  }
+
+  .feed .tag {
+    display: inline-block;
+    background: #00AFEF;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    width: fit-content;
+  }
+
+  .feed h1 {
+    font-size: 92px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  .feed h1 span {
+    color: #00AFEF;
+  }
+
+  .feed .sub {
+    font-size: 38px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+    margin-bottom: 52px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+  }
+
+  .feed .logo-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .feed .logo-text .mark {
+    background: #0064A6;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+    padding: 10px 22px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+  }
+
+  .feed .logo-text .mark em {
+    color: #00AFEF;
+    font-style: normal;
+  }
+
+  .feed .logo-text .zzz {
+    font-size: 22px;
+    color: #00AFEF;
+    letter-spacing: -2px;
+    margin-left: -4px;
+  }
+
+  /* ── STORY 1080×1920 ── */
+  .story {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .story .bg {
+    position: absolute;
+    inset: 0;
+    background: url('../bg-acorda-cansado.png') center center / cover no-repeat;
+  }
+
+  .story .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,18,45,0.75) 0%,
+      rgba(0,0,0,0.10) 35%,
+      rgba(0,0,0,0.15) 60%,
+      rgba(0,18,45,0.95) 100%
+    );
+  }
+
+  .story .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 80px 120px;
+  }
+
+  .story .top-logo .mark {
+    background: #0064A6;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 12px 24px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    display: inline-block;
+  }
+
+  .story .top-logo .mark em {
+    color: #00AFEF;
+    font-style: normal;
+  }
+
+  .story .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .story .tag {
+    display: inline-block;
+    background: #00AFEF;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 26px;
+    border-radius: 6px;
+    margin-bottom: 36px;
+    width: fit-content;
+  }
+
+  .story h1 {
+    font-size: 96px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.05;
+    margin-bottom: 28px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  .story h1 span {
+    color: #00AFEF;
+  }
+
+  .story .sub {
+    font-size: 40px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<!-- FEED -->
+<div class="feed">
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="tag">Você sabia?</div>
+    <h1>Sabe por que você<br>acorda <span>cansado?</span></h1>
+    <p class="sub">Pode não ser a noite que foi curta.<br>Às vezes o problema está onde você dorme.</p>
+    <div class="logo-text">
+      <div class="mark">colcH&otilde;es<em>&amp;</em>cia <span class="zzz">zzz</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- STORY -->
+<div class="story">
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="top-logo">
+      <div class="mark">colcH&otilde;es<em>&amp;</em>cia</div>
+    </div>
+    <div class="bottom">
+      <div class="tag">Você sabia?</div>
+      <h1>Sabe por que você<br>acorda <span>cansado?</span></h1>
+      <p class="sub">Pode não ser a noite que foi curta.<br>O problema pode estar onde você dorme.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
