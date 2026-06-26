@@ -16,4 +16,4 @@ jobs:
           SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
           SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
           SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
-        run: python3 marketing/conteudo/posts-conteudo-sono/post-calor-colchao-2026-07/post_instagram.py
+        run: python3 marketing/conteudo/sono-semana-2/post-calor-colchao-2026-07/post_instagram.py

@@ -3,7 +3,7 @@ sys.path.insert(0, '.claude/skills/int-instagram/scripts')
 from instagram_publisher import _get_account, publish_photo
 
 BASE = "https://raw.githubusercontent.com/luizglopesx/colchoescia/main"
-PASTA = "marketing/conteudo/posts-conteudo-sono/post-calor-colchao-2026-07"
+PASTA = "marketing/conteudo/sono-semana-2/post-calor-colchao-2026-07"
 
 CAPTION = (
     "Tá frio lá fora, mas você acorda suando. O lençol grudado, o travesseiro quente, aquela sensação "
