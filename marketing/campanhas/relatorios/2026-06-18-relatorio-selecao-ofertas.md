@@ -1,61 +1,70 @@
 ---
 periodo_inicio: 2026-06-15
-periodo_fim: 2026-06-25
-investimento_total: 687.08
-conversoes_total: 23
-cpa_medio: 29.87
+periodo_fim: 2026-06-26
+investimento_total: 758.34
+conversoes_total: 27
+cpa_medio: 28.09
 canais: [meta-ads]
 campanha: Selecao de Ofertas
 campaign_id: "120248428090490646"
 conta: colchoes_e_cia
 objetivo: OUTCOME_ENGAGEMENT
 status: em-andamento
-ultima_atualizacao: 2026-06-25
+ultima_atualizacao: 2026-06-26
 ---
 
-# Relatório de Ads — Seleção de Ofertas (15 a 25/06)
+# Relatório de Ads — Seleção de Ofertas (15 a 26/06)
 
 > Conta: **colchoes_e_cia** · Campanha **Seleção de Ofertas** (ativa desde 15/06) · Objetivo: Engajamento (direciona pra conversa no WhatsApp/Direct).
 > Primeira campanha — sem semana anterior pra comparar (o baseline é ela mesma, no 3º dia).
-> Dados puxados via Meta Graph API. Última atualização: 25/06/2026 (dados até 25/06, ~11 dias).
+> Dados puxados via Meta Graph API. Última atualização: 26/06/2026 (dados até 26/06, ~12 dias).
 
 ## Evolução dia a dia
 
-| Métrica | 15–20/06 (6d) | 15–23/06 (8d) | 15–24/06 (10d) | Atual (15–25/06, 11d) | Tendência |
+| Métrica | 15–23/06 (8d) | 15–24/06 (10d) | 15–25/06 (11d) | Atual (15–26/06, 12d) | Tendência |
 |---|---|---|---|---|---|
-| Investido | R$ 240,12 | R$ 503,18 | R$ 615,23 | **R$ 687,08** | ▲ |
-| Alcance | 4.203 | 8.916 | 10.485 | **11.697** | ▲ |
-| Impressões | 12.087 | 27.388 | 31.980 | **35.406** | ▲ |
-| Frequência | 2,9 | — | 3,05 | **3,03** | ⚠️ no limite |
-| CTR | 0,68% | 0,72% | 0,73% | **0,72%** | ≈ estável |
-| CPC | R$ 2,93 | R$ 2,54 | R$ 2,65 | **R$ 2,68** | ≈ |
-| Conversas iniciadas | 8 | 17 | 22 | **23** | ▲ +1 |
-| **Custo por conversa** | R$ 30,02 | R$ 29,60 | R$ 27,96 | **R$ 29,87** | ≈ |
+| Investido | R$ 503,18 | R$ 615,23 | R$ 687,08 | **R$ 758,34** | ▲ |
+| Alcance | 8.916 | 10.485 | 11.697 | **12.935** | ▲ |
+| Impressões | 27.388 | 31.980 | 35.406 | **39.241** | ▲ |
+| Frequência | — | 3,05 | 3,03 | **3,03** | ⚠️ no limite |
+| CTR | 0,72% | 0,73% | 0,72% | **0,76%** | ▲ |
+| CPC | R$ 2,54 | R$ 2,65 | R$ 2,68 | **R$ 2,54** | ▼ |
+| Conversas iniciadas | 17 | 22 | 23 | **27** | ▲ +4 |
+| **Custo por conversa** | R$ 29,60 | R$ 27,96 | R$ 29,87 | **R$ 28,09** | ▼ melhorou |
 
-**Leitura:** custo por conversa estável (~R$ 30). Mas atenção: só **+1 conversa** no último dia (22→23) com gasto continuando — o ritmo desacelerou. É a frequência alta (3,03) cobrando o preço: o público-base começou a saturar com o criativo velho. Por isso a peça nova entrou em cena (já aprovada, ver abaixo).
+**Leitura:** o ritmo voltou — **+4 conversas** no último dia (23→27), depois do dia fraco anterior. Custo por conversa caiu pra R$ 28,09, CTR subiu (0,76%) e CPC caiu (R$ 2,54). O Frio se recuperou sozinho (era R$ 34,25, voltou pra R$ 28,76), provando que o dia ruim foi pontual, não fadiga. **A partir de 26/06 a estrutura mudou: verba reduzida pra segurar o caixa (ver abaixo).**
 
-## Quebra por conjunto (até 25/06)
+## Quebra por conjunto (até 26/06)
 
 | Conjunto | No ar desde | Verba/dia | Gasto | Conversas | Custo/conversa | CTR | Status |
 |---|---|---|---|---|---|---|---|
-| **2** 🥇 | 19/06 | R$ 50 | R$ 329,05 | **13** | **R$ 25,31** | 0,64% | 🟢 ativo (+ peça nova) |
-| **1 — Frio** | 15/06 | R$ 30 | R$ 308,23 | 9 | R$ 34,25 ▲ | 0,77% | 🟢 ativo (encarecendo) |
+| **2** 🥇 | 19/06 | **R$ 30** (era R$ 50) | R$ 363,35 | **14** | **R$ 25,95** | 0,66% | 🟢 ativo (+ peça nova) |
+| **1 — Frio** | 15/06 | R$ 30 | R$ 345,13 | 12 | R$ 28,76 | 0,84% | 🔴 **PAUSADO 26/06** |
 | **3 — Retargeting** | 17/06 | R$ 20 | R$ 49,80 | 1 | R$ 49,80 | 1,05% | 🔴 PAUSADO 20/06 |
 
-- **Conjunto 2 segue líder** 🥇 — 13 conversas a **R$ 25,31**, o mais barato. É onde vai a verba extra.
-- **Conjunto 1 (Frio) encareceu** — de R$ 31,54 → **R$ 34,25** e sem conversa nova no último dia. Criativo cansando (mesmo problema que o 2 teve). **Mantém ativo**, mas precisa de arte nova. Gatilho pra agir: se passar de R$ 45/conversa.
-- **Conjunto 3 (Retargeting) pausado** — congelado, não atrapalha mais o custo médio.
+- **Conjunto 2 segue líder** 🥇 — 14 conversas a **R$ 25,95**, o mais barato. É o único ativo agora.
+- **Conjunto 1 (Frio) recuperou e foi pausado** — chegou a 12 conversas a R$ 28,76 (boa recuperação), mas foi **pausado em 26/06 pra cortar gasto** (decisão de caixa, não de performance).
+- **Conjunto 3 (Retargeting) pausado** desde 20/06.
+
+## Ajuste de verba — 26/06 (segurar caixa)
+
+A verba diária tava estourando o orçamento do dono. Ação tomada (manualmente no Meta):
+- 🔴 **Conjunto 1 (Frio) PAUSADO**
+- 🔽 **Conjunto 2 reduzido de R$ 50 → R$ 30/dia**
+- **Gasto diário: de R$ 80 → R$ 30/dia** (economia de R$ 50/dia), rodando só o conjunto mais barato com a peça nova.
+
+⚠️ **Esperado:** com R$ 30/dia em um conjunto só, o **volume de conversas vai cair** nos próximos dias. É o trade-off de segurar o caixa — eficiência mantida (R$ 26/conversa), volume menor.
 
 ## Peça nova — APROVADA (25/06)
 
-Criativo "Copa 2026 - C4 - Remarketing — Cópia" no **Conjunto 2** foi **aprovado e está ACTIVE** desde 25/06 (entrou em 24/06 como PENDING_REVIEW). Agora divide a entrega com o anúncio antigo, o que deve aliviar a frequência.
+Criativo "Copa 2026 - C4 - Remarketing — Cópia" no **Conjunto 2** está **ACTIVE** desde 25/06. Divide a entrega com o anúncio antigo, aliviando a frequência.
 
-## Decisões pendentes (25/06)
+## Decisões / próximos passos (26/06)
 
-- ⏳ **Subir verba do Conjunto 2 (R$ 50 → R$ 70/dia)** — recomendado, aguardando ok do dono. Condição (peça nova aprovada) já cumprida.
-- ⏳ **Arte nova pro Conjunto 1 (Frio)** — a fazer em breve (encarecendo por fadiga de criativo).
-- 🔴 **Conjunto 3** segue pausado.
-- ❓ **Conferir com o Joaquim** quantas das 23 conversas viraram venda — define se escala com força.
+- ✅ **Verba cortada** pra R$ 30/dia (Frio pausado + Conjunto 2 reduzido) — caixa sob controle.
+- ⏳ **Arte nova pro Frio** — segue como ideia, mas sem urgência (ele recuperou antes de pausar).
+- 🔴 **Conjuntos 1 e 3** pausados.
+- ❓ **Conferir com o Joaquim** quantas das 27 conversas viraram venda — define se vale reabrir verba mais pra frente.
 
 ## Resumo executivo
 
