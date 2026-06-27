@@ -1,50 +1,49 @@
 ---
 periodo_inicio: 2026-06-15
-periodo_fim: 2026-06-26
-investimento_total: 758.34
-conversoes_total: 27
-cpa_medio: 28.09
+periodo_fim: 2026-06-27
+investimento_total: 787.07
+conversoes_total: 28
+cpa_medio: 28.11
 canais: [meta-ads]
 campanha: Selecao de Ofertas
 campaign_id: "120248428090490646"
 conta: colchoes_e_cia
 objetivo: OUTCOME_ENGAGEMENT
 status: em-andamento
-ultima_atualizacao: 2026-06-26
+ultima_atualizacao: 2026-06-27
 ---
 
-# Relatório de Ads — Seleção de Ofertas (15 a 26/06)
+# Relatório de Ads — Seleção de Ofertas (15 a 27/06)
 
 > Conta: **colchoes_e_cia** · Campanha **Seleção de Ofertas** (ativa desde 15/06) · Objetivo: Engajamento (direciona pra conversa no WhatsApp/Direct).
 > Primeira campanha — sem semana anterior pra comparar (o baseline é ela mesma, no 3º dia).
-> Dados puxados via Meta Graph API. Última atualização: 26/06/2026 (dados até 26/06, ~12 dias).
+> Dados puxados via Meta Graph API. Última atualização: 27/06/2026 (dados até 27/06, ~13 dias).
 
 ## Evolução dia a dia
 
-| Métrica | 15–23/06 (8d) | 15–24/06 (10d) | 15–25/06 (11d) | Atual (15–26/06, 12d) | Tendência |
+| Métrica | 15–24/06 (10d) | 15–25/06 (11d) | 15–26/06 (12d) | Atual (15–27/06, 13d) | Tendência |
 |---|---|---|---|---|---|
-| Investido | R$ 503,18 | R$ 615,23 | R$ 687,08 | **R$ 758,34** | ▲ |
-| Alcance | 8.916 | 10.485 | 11.697 | **12.935** | ▲ |
-| Impressões | 27.388 | 31.980 | 35.406 | **39.241** | ▲ |
-| Frequência | — | 3,05 | 3,03 | **3,03** | ⚠️ no limite |
-| CTR | 0,72% | 0,73% | 0,72% | **0,76%** | ▲ |
-| CPC | R$ 2,54 | R$ 2,65 | R$ 2,68 | **R$ 2,54** | ▼ |
-| Conversas iniciadas | 17 | 22 | 23 | **27** | ▲ +4 |
-| **Custo por conversa** | R$ 29,60 | R$ 27,96 | R$ 29,87 | **R$ 28,09** | ▼ melhorou |
+| Investido | R$ 615,23 | R$ 687,08 | R$ 758,34 | **R$ 787,07** | ▲ +R$ 29 (R$30/dia) |
+| Alcance | 10.485 | 11.697 | 12.935 | **13.330** | ▲ |
+| Impressões | 31.980 | 35.406 | 39.241 | **40.444** | ▲ |
+| Frequência | 3,05 | 3,03 | 3,03 | **3,03** | ≈ |
+| CTR | 0,73% | 0,72% | 0,76% | **0,78%** | ▲ |
+| CPC | R$ 2,65 | R$ 2,68 | R$ 2,54 | **R$ 2,51** | ▼ |
+| Conversas iniciadas | 22 | 23 | 27 | **28** | ▲ +1 |
+| **Custo por conversa** | R$ 27,96 | R$ 29,87 | R$ 28,09 | **R$ 28,11** | ≈ estável |
 
-**Leitura:** o ritmo voltou — **+4 conversas** no último dia (23→27), depois do dia fraco anterior. Custo por conversa caiu pra R$ 28,09, CTR subiu (0,76%) e CPC caiu (R$ 2,54). O Frio se recuperou sozinho (era R$ 34,25, voltou pra R$ 28,76), provando que o dia ruim foi pontual, não fadiga. **A partir de 26/06 a estrutura mudou: verba reduzida pra segurar o caixa (ver abaixo).**
+**Leitura:** o corte de verba (26/06) pegou — gasto do dia caiu pra **~R$ 29** (era R$ 70+ antes). Caixa sob controle. Como avisado, o **volume caiu**: +1 conversa no dia (era ~+4 com os dois conjuntos). Eficiência intacta: o Conjunto 2 segue sozinho a **R$ 26,04/conversa**, o mais barato da campanha. Tudo rodando como planejado.
 
-## Quebra por conjunto (até 26/06)
+## Quebra por conjunto (até 27/06)
 
 | Conjunto | No ar desde | Verba/dia | Gasto | Conversas | Custo/conversa | CTR | Status |
 |---|---|---|---|---|---|---|---|
-| **2** 🥇 | 19/06 | **R$ 30** (era R$ 50) | R$ 363,35 | **14** | **R$ 25,95** | 0,66% | 🟢 ativo (+ peça nova) |
-| **1 — Frio** | 15/06 | R$ 30 | R$ 345,13 | 12 | R$ 28,76 | 0,84% | 🔴 **PAUSADO 26/06** |
+| **2** 🥇 | 19/06 | R$ 30 | R$ 390,66 | **15** | **R$ 26,04** | 0,69% | 🟢 ativo (único) |
+| **1 — Frio** | 15/06 | R$ 30 | R$ 346,61 | 12 | R$ 28,88 | 0,84% | 🔴 PAUSADO 26/06 |
 | **3 — Retargeting** | 17/06 | R$ 20 | R$ 49,80 | 1 | R$ 49,80 | 1,05% | 🔴 PAUSADO 20/06 |
 
-- **Conjunto 2 segue líder** 🥇 — 14 conversas a **R$ 25,95**, o mais barato. É o único ativo agora.
-- **Conjunto 1 (Frio) recuperou e foi pausado** — chegou a 12 conversas a R$ 28,76 (boa recuperação), mas foi **pausado em 26/06 pra cortar gasto** (decisão de caixa, não de performance).
-- **Conjunto 3 (Retargeting) pausado** desde 20/06.
+- **Conjunto 2 segue líder e único ativo** 🥇 — 15 conversas a **R$ 26,04**, o mais barato. Segurando a campanha sozinho.
+- **Conjuntos 1 (Frio) e 3 (Retargeting) pausados** — congelados, não gastam mais.
 
 ## Ajuste de verba — 26/06 (segurar caixa)
 
@@ -53,18 +52,18 @@ A verba diária tava estourando o orçamento do dono. Ação tomada (manualmente
 - 🔽 **Conjunto 2 reduzido de R$ 50 → R$ 30/dia**
 - **Gasto diário: de R$ 80 → R$ 30/dia** (economia de R$ 50/dia), rodando só o conjunto mais barato com a peça nova.
 
-⚠️ **Esperado:** com R$ 30/dia em um conjunto só, o **volume de conversas vai cair** nos próximos dias. É o trade-off de segurar o caixa — eficiência mantida (R$ 26/conversa), volume menor.
+✅ **Confirmado em 27/06:** o corte funcionou — gasto do dia em ~R$ 29, volume menor (+1 conversa/dia) como esperado, eficiência mantida (R$ 26/conversa).
 
 ## Peça nova — APROVADA (25/06)
 
 Criativo "Copa 2026 - C4 - Remarketing — Cópia" no **Conjunto 2** está **ACTIVE** desde 25/06. Divide a entrega com o anúncio antigo, aliviando a frequência.
 
-## Decisões / próximos passos (26/06)
+## Decisões / próximos passos (27/06)
 
-- ✅ **Verba cortada** pra R$ 30/dia (Frio pausado + Conjunto 2 reduzido) — caixa sob controle.
-- ⏳ **Arte nova pro Frio** — segue como ideia, mas sem urgência (ele recuperou antes de pausar).
+- ✅ **Verba cortada e confirmada** — R$ 30/dia, caixa sob controle, eficiência mantida.
+- 🟢 **Só rodar** — nada a mexer. O Conjunto 2 segura a campanha sozinho a R$ 26/conversa.
 - 🔴 **Conjuntos 1 e 3** pausados.
-- ❓ **Conferir com o Joaquim** quantas das 27 conversas viraram venda — define se vale reabrir verba mais pra frente.
+- ❓ **Conferir com o Joaquim** quantas das 28 conversas viraram venda — define se vale reabrir verba mais pra frente.
 
 ## Resumo executivo
 
