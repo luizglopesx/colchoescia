@@ -28,10 +28,10 @@ Operação da Colchões e Cia. Marketing, vendas, conteúdo e administração nu
 - `_memoria/` — quem é a empresa, como falamos, foco atual, integração Meta
 - `identidade/` — marca aplicada em tudo que o sistema gera
 - `marketing/` — campanhas, conteúdo gerado, mídia paga
-- `marketing/conteudo/` — posts gerados (HTML, PNGs, legendas, scripts de publicação)
+- `marketing/conteudo/` — posts gerados (HTML, PNGs, legendas, scripts de publicação) organizados em séries (ex: `posts-conteudo-sono/`, `sono-semana-2/`)
 - `marketing/campanhas/` — campanhas com roteiro, legendas e assets
 - `.github/workflows/` — automação de publicação via GitHub Actions cron
-- `nexus-skills/` — scripts de integração Meta (instagram_publisher.py, facebook_publisher.py)
+- `.claude/skills/int-instagram/scripts/` — scripts de integração Meta (instagram_publisher.py, facebook_publisher.py)
 - `saidas/` — documentos pontuais gerados
 - `dados/` — arquivos a analisar (CSV, XLSX, PDF)
 - `scripts/` — automações e utilitários

@@ -15,17 +15,25 @@ Criar presença digital consistente e produzir conteúdo de marketing de forma r
 ## O que está funcionando
 
 - **Meta Graph API integrada** (18/05/2026) — publica e agenda posts no Instagram e Facebook via script Python
-- **GitHub Actions ativo** — 3 workflows de posts institucionais (4, 6 e 7/jun) + 5 workflows da campanha Dia dos Namorados (1–12/jun) + 3 workflows de posts educativos (8, 10 e 12/jun)
-- **Primeiro ciclo semanal criado** (03/06/2026) — 3 posts feed + 3 stories + legendas + agendamento Facebook feito em uma sessão
-- **Segundo ciclo semanal criado** (05/06/2026) — 3 posts educativos (vida útil do colchão, sinais de trocar, vale o investimento). Feed + legenda agendados no Facebook para 08, 10 e 12/06 às 12h; feed (com texto) + story (só imagem) no Instagram via workflows GitHub Actions cron nas mesmas datas/horários
+- **GitHub Actions ativo** — 17 workflows: 3 institucionais, 3 educativos, 5 Dia dos Namorados, 7 da série Sono (24/06 a 10/07)
+- **Agendamento Facebook local** — `facebook_publisher.py schedule_post` funcionando direto do terminal (sem depender de cron)
+- **Série de conteúdo do Sono** — 7 posts educativos sobre qualidade do sono (2 semanas: 24/06–03/07 e 06–10/07/2026). Posts: acorda cansado, dor nas costas, casais brigam, acorda de madrugada, colchão afundando, alergia/espirros, tempo de trocar
+- **Higgsfield integrado** (26/06/2026) — geração de imagens de fundo via `higgsfield generate create flux_2` (CLI), substituindo dependência de bancos de imagem
+- **Ciclo semanal consolidado** — 3 posts por semana (seg-qua-sex às 12h), com feed + story + legenda + agendamento Facebook + workflow Instagram
 
 ## Campanhas ativas
 
-- **Dia dos Namorados** (01–13/06/2026) — workflows em `.github/workflows/`: `instagram-feed-namorados.yml`, `story-01jun-lancamento.yml`, `story-06jun-urgencia.yml`, `story-11jun-vespera.yml`, `story-12jun-dia.yml`
-- **Posts institucionais semana 03/06** — workflows: `post-quem-somos-2026-06-04.yml`, `post-missao-2026-06-06.yml`, `post-diferenciais-2026-06-07.yml`
-- **Posts educativos semana 08/06** — workflows: `post-vida-util-2026-06-08.yml`, `post-sinais-trocar-2026-06-10.yml`, `post-vale-investimento-2026-06-12.yml`
+- **Série Sono — Semana 2** (06–10/07/2026) — posts em `marketing/conteudo/sono-semana-2/`: colchão afundando (06/07), alergia/espirros (08/07), tempo de trocar (10/07). Workflows: `sono-post5-2026-07-06.yml`, `sono-post6-2026-07-08.yml`, `sono-post7-2026-07-10.yml`
+
+## Campanhas encerradas
+
+- **Série Sono — Semana 1** (24/06–03/07/2026) — posts em `marketing/conteudo/posts-conteudo-sono/`
+- **Dia dos Namorados** (01–13/06/2026)
+- **Posts institucionais** (04–07/06/2026)
+- **Posts educativos** (08–12/06/2026)
 
 ## O que pode esperar
 
 - Expansão para novos produtos
 - Processos administrativos internos
+- Próximas semanas da série Sono
