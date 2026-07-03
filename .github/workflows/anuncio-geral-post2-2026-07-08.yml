@@ -1,0 +1,19 @@
+name: Instagram — Anúncio Geral Post 2 (08/07)
+on:
+  schedule:
+    - cron: '0 15 8 7 *'  # 15h UTC = 12h BRT
+  workflow_dispatch:
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publicar Feed + Story no Instagram
+        env:
+          SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
+          SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
+        run: python3 marketing/conteudo/anuncio-geral-2026-07/post2_instagram.py

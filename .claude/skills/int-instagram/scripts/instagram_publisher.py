@@ -192,6 +192,10 @@ def publish_story(account: dict, image_url: str) -> dict:
     if not creation_id:
         return {"error": "No creation_id returned", "detail": str(create)}
 
+    # Polling: aguarda o container ficar pronto antes de publicar
+    if not _wait_until_ready(creation_id, token):
+        return {"error": "Story container did not reach FINISHED status", "creation_id": creation_id}
+
     result = _api_post(f"{ig_id}/media_publish", {
         "creation_id": creation_id,
         "access_token": token,
