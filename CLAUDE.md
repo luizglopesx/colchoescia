@@ -11,6 +11,7 @@ No início de toda conversa, ler os seguintes arquivos (quando existirem e estiv
 1. `_memoria/empresa.md` — quem é a Colchões e Cia, o que vende, equipe, público
 2. `_memoria/preferencias.md` — tom de voz, estilo de escrita, o que evitar
 3. `_memoria/estrategia.md` — foco atual, prioridades, o que tá segurando o crescimento
+4. `_memoria/meta_integration.md` — contexto técnico da integração Meta, quando a tarefa envolver Instagram/Facebook
 
 Usar essas informações como base pra qualquer resposta ou decisão. Ao sugerir prioridades, formatos ou abordagens, considerar o foco atual descrito em `estrategia.md`.
 

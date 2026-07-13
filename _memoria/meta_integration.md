@@ -24,11 +24,13 @@ Tokens: Page Access Tokens permanentes (não expiram enquanto a senha não mudar
 
 ## Módulos criados
 
-Todos em `/workspace/.claude/skills/int-instagram/scripts/`:
+Todos em `.claude/skills/int-instagram/scripts/`:
 
 - `instagram_publisher.py` — publish_photo, publish_carousel, publish_story, schedule_photo, schedule_carousel, get_scheduled_posts
 - `facebook_publisher.py` — publish_post, schedule_post, get_scheduled_posts, delete_post
 - `meta_ads_client.py` — create_campaign, create_ad_set, create_creative, create_ad, get_ad_insights
+
+Também existem cópias rastreáveis dos scripts em `nexus-skills/meta-integration-scripts/`.
 
 ## Skill criada
 
