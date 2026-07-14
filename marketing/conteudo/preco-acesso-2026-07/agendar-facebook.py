@@ -13,13 +13,13 @@ posts = [
 
 Qualidade de verdade com preço que cabe na sua realidade. Sem enrolação, sem promessa vazia — só colchão bom pra você dormir melhor.
 
-Passa na loja ou chama no WhatsApp. A gente te mostra o preço na hora.
+Passa na loja ou liga pra gente. A gente te mostra o preço na hora.
 
 📍 Rua 20 Esq. Av. 13 — Centro — Barretos
-📱 WhatsApp: (17) 3324-5765
+📞 (17) 3325-6039
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/onVdhh6.png",
+        "image_url": "https://i.imgur.com/aRd6h4Q.png",
         "unix_ts": 1784127600,  # 15/07/2026 12:00 BRT
     },
     {
@@ -27,13 +27,13 @@ Pensou Colchão, Colchões e Cia!""",
 
 Colchão novo em até 12x sem juros e sem entrada no carnê. Do jeito que o povo gosta, sem letra miúda.
 
-Passa na loja ou chama no WhatsApp. O Joaquim monta o parcelamento certo pra você.
+Passa na loja ou liga pra gente. O Joaquim monta o parcelamento certo pra você.
 
 📍 Rua 20 Esq. Av. 13 — Centro — Barretos
-📱 WhatsApp: (17) 3324-5765
+📞 (17) 3325-6039
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/YkeXK2E.png",
+        "image_url": "https://i.imgur.com/2NkTTEI.png",
         "unix_ts": 1784300400,  # 17/07/2026 12:00 BRT
     },
     {
@@ -41,13 +41,13 @@ Pensou Colchão, Colchões e Cia!""",
 
 Tem opção boa em toda faixa de preço — do simples ao completo. Ninguém sai daqui sem solução pra dormir melhor.
 
-Passa na loja ou chama no WhatsApp. A gente acha o colchão certo pro seu bolso.
+Passa na loja ou liga pra gente. A gente acha o colchão certo pro seu bolso.
 
 📍 Rua 20 Esq. Av. 13 — Centro — Barretos
-📱 WhatsApp: (17) 3325-6039
+📞 (17) 3325-6039
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/OBR3LIb.png",
+        "image_url": "https://i.imgur.com/ScYQL8a.png",
         "unix_ts": 1784559600,  # 20/07/2026 12:00 BRT
     },
 ]
