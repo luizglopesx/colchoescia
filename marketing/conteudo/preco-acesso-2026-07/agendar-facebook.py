@@ -37,17 +37,17 @@ Pensou Colchão, Colchões e Cia!""",
         "unix_ts": 1784300400,  # 17/07/2026 12:00 BRT
     },
     {
-        "message": """Preço claro, sem pegadinha. 🔍
+        "message": """Colchão pra cada bolso. 🛏️
 
-O que você vê na loja é o que você paga. Sem letra miúda, sem taxa escondida — do jeito que a gente sempre fez.
+Tem opção boa em toda faixa de preço — do simples ao completo. Ninguém sai daqui sem solução pra dormir melhor.
 
-Passa na loja ou chama no WhatsApp. Preço na lata, sem enrolação.
+Passa na loja ou chama no WhatsApp. A gente acha o colchão certo pro seu bolso.
 
 📍 Rua 20 Esq. Av. 13 — Centro — Barretos
 📱 WhatsApp: (17) 3324-5765
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/oaDpRRK.png",
+        "image_url": "https://i.imgur.com/OBR3LIb.png",
         "unix_ts": 1784559600,  # 20/07/2026 12:00 BRT
     },
 ]

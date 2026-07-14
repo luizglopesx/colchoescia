@@ -4,7 +4,7 @@ const path = require('path');
 const posts = [
   { html: 'post1-colchao-bom.html', feed: 'post1-feed.png', story: 'post1-story.png' },
   { html: 'post2-parcela-bolso.html', feed: 'post2-feed.png', story: 'post2-story.png' },
-  { html: 'post3-preco-claro.html', feed: 'post3-feed.png', story: 'post3-story.png' },
+  { html: 'post3-cada-bolso.html', feed: 'post3-feed.png', story: 'post3-story.png' },
 ];
 
 (async () => {

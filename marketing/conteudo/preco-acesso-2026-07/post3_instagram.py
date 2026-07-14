@@ -3,26 +3,26 @@ import sys, json
 sys.path.insert(0, '.claude/skills/int-instagram/scripts')
 from instagram_publisher import _get_account, publish_photo, publish_story
 
-FEED_URL = "https://i.imgur.com/oaDpRRK.png"
-STORY_URL = "https://i.imgur.com/rWoDLUZ.png"
+FEED_URL = "https://i.imgur.com/OBR3LIb.png"
+STORY_URL = "https://i.imgur.com/QCikoEy.png"
 
 CAPTION = (
-    "Preço claro, sem pegadinha. 🔍\n\n"
-    "O que você vê na loja é o que você paga. Sem letra miúda, sem taxa "
-    "escondida — do jeito que a gente sempre fez.\n\n"
-    "Passa na loja ou chama no WhatsApp. Preço na lata, sem enrolação.\n\n"
+    "Colchão pra cada bolso. 🛏️\n\n"
+    "Tem opção boa em toda faixa de preço — do simples ao completo. "
+    "Ninguém sai daqui sem solução pra dormir melhor.\n\n"
+    "Passa na loja ou chama no WhatsApp. A gente acha o colchão certo pro seu bolso.\n\n"
     "📍 Rua 20 Esq. Av. 13 — Centro — Barretos\n"
     "📱 WhatsApp: (17) 3324-5765\n\n"
     "Pensou Colchão, Colchões e Cia!\n\n"
-    "#ColchoesECia #PrecoClaro #Colchao #LojaDeColchao #Barretos #Oferta #SemPegadinha"
+    "#ColchoesECia #ColchaoPraTodoMundo #Colchao #LojaDeColchao #Barretos #Oferta #PrecoAcessivel"
 )
 
 acc = _get_account('colchoes_e_cia')
 
-print("=== FEED (Post 3 - Preço Claro, Sem Pegadinha) ===")
+print("=== FEED (Post 3 - Colchão Pra Cada Bolso) ===")
 r = publish_photo(acc, FEED_URL, CAPTION)
 print(json.dumps(r, indent=2, ensure_ascii=False))
 
-print("\n=== STORY (Post 3 - Preço Claro, Sem Pegadinha) ===")
+print("\n=== STORY (Post 3 - Colchão Pra Cada Bolso) ===")
 r2 = publish_story(acc, STORY_URL)
 print(json.dumps(r2, indent=2, ensure_ascii=False))

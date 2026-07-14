@@ -26,7 +26,7 @@ Criar presença digital consistente e produzir conteúdo de marketing de forma r
 
 - **Série Sono — Semana 2** (06–10/07/2026) — posts em `marketing/conteudo/sono-semana-2/`: colchão afundando (06/07), alergia/espirros (08/07), tempo de trocar (10/07). Workflows: `sono-post5-2026-07-06.yml`, `sono-post6-2026-07-08.yml`, `sono-post7-2026-07-10.yml`
 - **Anúncio Geral Julho 2026** (06–10/07/2026) — posts em `marketing/conteudo/anuncio-geral-2026-07/`: dormir bem (06/07), preço de vizinho (08/07), seu sono merece (10/07). Workflows: `anuncio-geral-post1-2026-07-06.yml`, `anuncio-geral-post2-2026-07-08.yml`, `anuncio-geral-post3-2026-07-10.yml`
-- **Preço e Acesso Julho 2026** (15–20/07/2026) — posts em `marketing/conteudo/preco-acesso-2026-07/`: colchão bom não precisa ser caro (15/07), parcela que cabe no bolso (17/07), preço claro sem pegadinha (20/07). Workflows: `preco-acesso-post1-2026-07-15.yml`, `preco-acesso-post2-2026-07-17.yml`, `preco-acesso-post3-2026-07-20.yml`. Agendamento Facebook ainda pendente (arquivo `agendar-facebook.py` pronto, aguardando o usuário rodar)
+- **Preço e Acesso Julho 2026** (15–20/07/2026) — posts em `marketing/conteudo/preco-acesso-2026-07/`: colchão bom não precisa ser caro (15/07), parcela que cabe no bolso (17/07), colchão pra cada bolso (20/07). Workflows: `preco-acesso-post1-2026-07-15.yml`, `preco-acesso-post2-2026-07-17.yml`, `preco-acesso-post3-2026-07-20.yml`. Agendamento Facebook ainda pendente (arquivo `agendar-facebook.py` pronto, aguardando o usuário rodar)
 
 ## Campanhas encerradas
 
