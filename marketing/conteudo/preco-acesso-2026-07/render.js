@@ -1,10 +1,11 @@
 const { chromium } = require('playwright');
 const path = require('path');
 
+// post3 é editado manualmente (logo e CTA customizados) — não incluir aqui,
+// senão o próximo `node render.js` sobrescreve a arte com o template padrão.
 const posts = [
   { html: 'post1-colchao-bom.html', feed: 'post1-feed.png', story: 'post1-story.png' },
   { html: 'post2-parcela-bolso.html', feed: 'post2-feed.png', story: 'post2-story.png' },
-  { html: 'post3-cada-bolso.html', feed: 'post3-feed.png', story: 'post3-story.png' },
 ];
 
 (async () => {

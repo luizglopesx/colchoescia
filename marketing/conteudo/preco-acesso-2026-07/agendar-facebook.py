@@ -47,7 +47,7 @@ Passa na loja ou liga pra gente. A gente acha o colchão certo pro seu bolso.
 📞 (17) 3325-6039
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/ScYQL8a.png",
+        "image_url": "https://i.imgur.com/kKUP1O4.png",
         "unix_ts": 1784559600,  # 20/07/2026 12:00 BRT
     },
 ]
