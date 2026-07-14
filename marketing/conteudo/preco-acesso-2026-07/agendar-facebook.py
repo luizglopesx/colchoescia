@@ -19,7 +19,7 @@ Passa na loja ou liga pra gente. A gente te mostra o preço na hora.
 📞 (17) 3325-6039
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/aRd6h4Q.png",
+        "image_url": "https://i.imgur.com/z7r4lpQ.png",
         "unix_ts": 1784127600,  # 15/07/2026 12:00 BRT
     },
     {
@@ -33,7 +33,7 @@ Passa na loja ou liga pra gente. O Joaquim monta o parcelamento certo pra você.
 📞 (17) 3325-6039
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/2NkTTEI.png",
+        "image_url": "https://i.imgur.com/8blRkRH.png",
         "unix_ts": 1784300400,  # 17/07/2026 12:00 BRT
     },
     {
