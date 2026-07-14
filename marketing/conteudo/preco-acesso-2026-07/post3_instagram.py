@@ -12,7 +12,7 @@ CAPTION = (
     "Ninguém sai daqui sem solução pra dormir melhor.\n\n"
     "Passa na loja ou chama no WhatsApp. A gente acha o colchão certo pro seu bolso.\n\n"
     "📍 Rua 20 Esq. Av. 13 — Centro — Barretos\n"
-    "📱 WhatsApp: (17) 3324-5765\n\n"
+    "📱 WhatsApp: (17) 3325-6039\n\n"
     "Pensou Colchão, Colchões e Cia!\n\n"
     "#ColchoesECia #ColchaoPraTodoMundo #Colchao #LojaDeColchao #Barretos #Oferta #PrecoAcessivel"
 )
