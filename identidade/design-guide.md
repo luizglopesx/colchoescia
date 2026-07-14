@@ -54,11 +54,9 @@ Marca amigável, acessível, popular. O logo tem personalidade (zzz de sono, & e
 
 ## Logo
 
-- **Arquivo horizontal:** `identidade/logo.png` (ou `.svg` quando disponível)
-- **Formato horizontal:** colcHões&cia numa linha — uso principal
-- **Formato empilhado:** colcHões / &cia em duas linhas — uso em espaços quadrados (avatar, ícone)
-- **Versão pra fundo escuro:** logo em branco (ver manual página "Negativo")
-- **Versão pra fundo azul:** logo em branco (ver manual página "Fundo Azul")
+- **Arquivo horizontal:** `identidade/Logo Cc fundo Transparente.png` — colcHões&cia numa linha, fundo transparente, cores oficiais (azul escuro + azul claro)
+- **Arquivo empilhado:** `identidade/Logo CC2 f t.png` — colcHões / &cia em duas linhas, uso em espaços quadrados (avatar, ícone)
+- **Versão pra fundo escuro/azul:** não existe arquivo pronto — recortar o logo oficial e recolorir os pixels azul-escuro (`#0064A6`) pra branco, mantendo o azul claro (`#00AFEF`) do "zzz"/"&" como está (processo usado na campanha `preco-acesso-2026-07`, ver `logo-oficial-white.png` como referência)
 - **Onde usar:** slide final do carrossel (CTA), header de propostas, posts de Instagram
 - **Tamanho sugerido:** largura entre 120-200px nos HTMLs
 

@@ -21,3 +21,6 @@ Direto, simples e grudento. O exemplo real da marca: "Pensou Colchão Colchões 
 Comunicação honesta e direta. Sem enrolação. A marca fala com o cliente como um vizinho de confiança — sem bajulação, sem promessa vazia, sem blá-blá-blá. O que vai, vai claro.
 
 ## Preferências adicionais
+
+- **CTA de contato:** sempre direcionar pra ligação, nunca WhatsApp. Usar ícone 📞 e o telefone da loja (17) 3325-6039 — não usar o WhatsApp (17) 3324-5765 como call-to-action em peças/legendas.
+- **Logo:** nunca recriar o logo em CSS/texto — usar o arquivo oficial em `identidade/` (ver `design-guide.md`). Pra fundo escuro/azul, recolorir o azul-escuro pra branco mantendo o azul claro do "zzz"/"&".
