@@ -3,8 +3,8 @@ import sys, json
 sys.path.insert(0, '.claude/skills/int-instagram/scripts')
 from instagram_publisher import _get_account, publish_photo, publish_story
 
-FEED_URL = "https://i.imgur.com/0HM4gBa.png"
-STORY_URL = "https://i.imgur.com/3X0P2gi.png"
+FEED_URL = "https://i.imgur.com/onVdhh6.png"
+STORY_URL = "https://i.imgur.com/Lt4ePPA.png"
 
 CAPTION = (
     "Colchão bom não precisa ser caro. 💰\n\n"
@@ -12,7 +12,7 @@ CAPTION = (
     "sem promessa vazia — só colchão bom pra você dormir melhor.\n\n"
     "Passa na loja ou chama no WhatsApp. A gente te mostra o preço na hora.\n\n"
     "📍 Rua 20 Esq. Av. 13 — Centro — Barretos\n"
-    "📱 WhatsApp: (17) 3325-6039\n\n"
+    "📱 WhatsApp: (17) 3324-5765\n\n"
     "Pensou Colchão, Colchões e Cia!\n\n"
     "#ColchoesECia #PrecoJusto #Colchao #LojaDeColchao #Barretos #Oferta #ColchaoBom"
 )
