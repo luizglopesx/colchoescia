@@ -3,8 +3,8 @@ import sys, json
 sys.path.insert(0, '.claude/skills/int-instagram/scripts')
 from instagram_publisher import _get_account, publish_photo, publish_story
 
-FEED_URL = "https://i.imgur.com/43CEk5G.png"
-STORY_URL = "https://i.imgur.com/tDXotHn.png"
+FEED_URL = "https://i.imgur.com/oaDpRRK.png"
+STORY_URL = "https://i.imgur.com/rWoDLUZ.png"
 
 CAPTION = (
     "Preço claro, sem pegadinha. 🔍\n\n"

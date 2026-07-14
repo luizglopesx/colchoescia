@@ -47,7 +47,7 @@ Passa na loja ou chama no WhatsApp. Preço na lata, sem enrolação.
 📱 WhatsApp: (17) 3324-5765
 
 Pensou Colchão, Colchões e Cia!""",
-        "image_url": "https://i.imgur.com/43CEk5G.png",
+        "image_url": "https://i.imgur.com/oaDpRRK.png",
         "unix_ts": 1784559600,  # 20/07/2026 12:00 BRT
     },
 ]
