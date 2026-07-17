@@ -24,3 +24,10 @@
 ## Contexto adicional
 
 Empresa posicionada para o público popular (B, C, D). Outras unidades do mesmo grupo atendem públicos de maior poder aquisitivo. O foco aqui é volume e acessibilidade. Gargalo atual é marketing e criação de conteúdo.
+
+## Características dos produtos
+
+- **Colchão de espuma:** linha mais firme/densa. Sustenta e não afunda com o tempo — vender como a opção pra quem gosta de base mais dura.
+- **Colchão de molas:** linha mais macia, por causa das camadas de pillow-top por cima das molas. Também ventila melhor — vender como a opção pra quem gosta de cama mais aconchegante e sente calor durante o sono.
+
+Corrigido em 17/07/2026 — o instinto errado é achar que espuma = macia e mola = firme (padrão de colchão de espuma viscoelástica/memory foam). Na linha da Colchões e Cia é o contrário.
