@@ -163,9 +163,14 @@ claude mcp add n8n -- npx -y n8n-mcp
 **Quando usar:** Skills que precisam disparar automacoes externas
 
 ### Supabase
-**O que faz:** Banco de dados e backend completo
-**Precisa de conta:** Sim, projeto Supabase
-**Quando usar:** Skills que precisam guardar dados, autenticacao, backend
+**O que faz:** Banco de dados e backend completo. Storage do catalogo de fotos transparente roda num bucket Supabase (`catalogo-fotos-transparente`), sincronizado pro repo via `scripts/sync-catalogo-supabase.mjs`
+**Precisa de conta:** Sim, projeto Supabase (self-hosted, `supabase.senhorcolchao.com`)
+**Configurar:** Salvar `SUPABASE_URL`, `SUPABASE_BUCKET` e `SUPABASE_SERVICE_KEY` no `.env`
+**Como usar numa skill:**
+```bash
+node --env-file=.env scripts/sync-catalogo-supabase.mjs
+```
+**Quando usar:** Skills que precisam guardar dados, autenticacao, backend, ou trazer fotos novas do catalogo
 
 ### Telegram
 **O que faz:** Envia e recebe mensagens via bot do Telegram
