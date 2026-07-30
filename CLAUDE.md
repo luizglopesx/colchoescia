@@ -1,102 +1,66 @@
-# Colchões e Cia — MazyOS
+# Colchoes e Cia - MazyOS no Claude Code
 
-Empresa de varejo de colchões e produtos de dormitório, posicionada para o público B, C e D. Equipe de 3 pessoas: dono (administração), Otávio (marketing) e Joaquim (vendas). Gargalo atual: criação de conteúdo e marketing.
+Este projeto usa o MazyOS como sistema operacional de trabalho da Colchoes e Cia.
+A memoria oficial e compartilhada do projeto fica nos arquivos Markdown da pasta
+`_memoria/`. Nao duplicar aqui fatos do negocio, preferencias, campanhas ou contexto
+tecnico.
 
----
+## Contexto obrigatorio
 
-## Contexto do negócio
+No inicio de qualquer trabalho neste projeto, ler e usar naturalmente, quando existirem:
 
-No início de toda conversa, ler os seguintes arquivos (quando existirem e estiverem preenchidos):
+1. `_memoria/empresa.md` - empresa, produtos, equipe, contatos e operacao
+2. `_memoria/preferencias.md` - tom de voz, estilo e coisas a evitar
+3. `_memoria/estrategia.md` - prioridades, metas e campanhas
+4. `_memoria/meta_integration.md` - integracoes Instagram/Facebook, quando aplicavel
 
-1. `_memoria/empresa.md` — quem é a Colchões e Cia, o que vende, equipe, público
-2. `_memoria/preferencias.md` — tom de voz, estilo de escrita, o que evitar
-3. `_memoria/estrategia.md` — foco atual, prioridades, o que tá segurando o crescimento
-4. `_memoria/meta_integration.md` — contexto técnico da integração Meta, quando a tarefa envolver Instagram/Facebook
+Para tarefas visuais, consultar tambem `identidade/design-guide.md`.
 
-Usar essas informações como base pra qualquer resposta ou decisão. Ao sugerir prioridades, formatos ou abordagens, considerar o foco atual descrito em `estrategia.md`.
+Esses arquivos sao a fonte principal. Se houver conflito entre uma informacao deles e
+uma referencia antiga em outro arquivo, usar `_memoria/` e sinalizar a divergencia.
+Nao precisa listar o que foi lido nem confirmar a leitura.
 
-Pra qualquer tarefa visual (carrossel, post, landing page), consultar `identidade/design-guide.md` como referência de estilo — cores `#0064A6` e `#00AFEF`, fonte Arial Rounded MT Bold.
+## Estrutura do workspace
 
-Não é necessário listar o que foi lido nem confirmar a leitura. Apenas usar o contexto naturalmente.
+- `_memoria/` - memoria oficial e compartilhada
+- `identidade/` - identidade visual da marca
+- `marketing/` - campanhas, conteudo e midia paga
+- `saidas/` - documentos pontuais gerados
+- `dados/` - arquivos para analise
+- `scripts/` - automacoes e utilitarios
+- `.claude/skills/` - instrucoes e fluxos reutilizaveis do Claude Code
+- `.github/workflows/` - automacoes do GitHub Actions
 
----
+## Skills
 
-## O que é esse workspace
+Antes de executar uma tarefa, verificar se existe skill relevante em
+`.claude/skills/`. Se existir, seguir o `SKILL.md` correspondente quando fizer sentido.
 
-Operação da Colchões e Cia. Marketing, vendas, conteúdo e administração num só lugar.
+Ao concluir uma tarefa repetivel que nao tenha skill, perguntar:
 
-**Estrutura de pastas:**
-- `_memoria/` — quem é a empresa, como falamos, foco atual, integração Meta
-- `identidade/` — marca aplicada em tudo que o sistema gera
-- `marketing/` — campanhas, conteúdo gerado, mídia paga
-- `marketing/conteudo/` — posts gerados (HTML, PNGs, legendas, scripts de publicação) organizados em séries (ex: `posts-conteudo-sono/`, `sono-semana-2/`)
-- `marketing/campanhas/` — campanhas com roteiro, legendas e assets
-- `.github/workflows/` — automação de publicação via GitHub Actions cron
-- `.claude/skills/int-instagram/scripts/` — scripts de integração Meta (instagram_publisher.py, facebook_publisher.py)
-- `saidas/` — documentos pontuais gerados
-- `dados/` — arquivos a analisar (CSV, XLSX, PDF)
-- `scripts/` — automações e utilitários
+> "Isso pode virar uma skill pra proxima vez. Quer que eu crie?"
 
----
-
-## Sobre a empresa
-
-Colchões e Cia é uma empresa de varejo de produtos para dormitório. Atua no segmento popular (público B, C, D), com foco em acessibilidade e volume. Vende colchões de espuma, colchões de molas, cama box, cabeceiras e box baú. Faz parte de um grupo com outras unidades voltadas a públicos de maior poder aquisitivo.
-
-**Equipe:**
-- Dono — administração geral
-- Otávio — marketing
-- Joaquim — vendas
-
----
-
-## Tom de voz
-
-Direto, simples, grudento. Referência real: "Pensou Colchão Colchões e Cia!" — curto, sem enrolação, fácil de gravar. Comunicação honesta, sem promessa vazia, sem jargão de guru.
-
-Evitar: incoerência, falta de transparência, brincadeiras fora de contexto, promessas vazias, "alavancar", "sinergia", tom formal demais.
-
----
-
-## Fluxo de trabalho
-
-Antes de executar qualquer tarefa, verificar se existe skill relevante em `.claude/skills/`. Se encontrar, seguir as instruções da skill. Se não encontrar, executar a tarefa normalmente.
-
-Ao concluir uma tarefa que não tinha skill mas parece repetível, perguntar:
-
-> "Isso pode virar uma skill pra próxima vez. Quer que eu crie?"
-
----
-
-## Aprender com correções
-
-Quando o usuário corrigir algo ou dar instrução permanente ("na verdade é assim", "não faça mais isso", "prefiro assim", "sempre que...", "evita..."), perguntar:
-
-> "Quer que eu salve isso pra não precisar repetir?"
-
-Se sim, identificar onde salvar:
-- **Sobre o negócio** → `_memoria/empresa.md`
-- **Sobre preferências e estilo** → `_memoria/preferencias.md`
-- **Sobre prioridades e foco** → `_memoria/estrategia.md`
-- **Regra de comportamento nessa pasta** → próprio `CLAUDE.md`
-
----
-
-## Manter contexto atualizado
-
-Ao terminar tarefa que mudou algo relevante, perguntar:
-
-> "Isso mudou algo no teu contexto. Quer que eu atualize a memória?"
-
-**Quando NÃO perguntar:** tarefas pontuais sem impacto no contexto, perguntas simples, mudanças já salvas.
-
----
-
-## Criação de skills
-
-Quando o usuário pedir skill nova:
+Quando o usuario pedir uma skill nova:
 
 1. Verificar se existe template relevante em `templates/skills/`
-2. Perguntar se é específica desse projeto ou útil em qualquer contexto
-3. Ler `_memoria/empresa.md` e `_memoria/preferencias.md` pra calibrar ao contexto da Colchões e Cia
-4. Seguir o fluxo da skill-creator nativa do Claude Code
+2. Perguntar se ela e especifica deste projeto ou util em qualquer contexto
+3. Usar `_memoria/empresa.md` e `_memoria/preferencias.md` para calibrar a skill
+4. Seguir o fluxo da skill-creator disponivel no Claude Code
+
+## Atualizacao da memoria
+
+Quando o usuario pedir para lembrar, guardar ou salvar uma informacao permanente,
+confirmar a permanencia quando necessario e editar somente o arquivo adequado:
+
+- Negocio, produtos, equipe, contatos ou operacao: `_memoria/empresa.md`
+- Tom, linguagem, preferencias ou coisas a evitar: `_memoria/preferencias.md`
+- Prioridades, metas, campanhas, prazos ou foco: `_memoria/estrategia.md`
+- Instagram, Facebook, tokens, workflows ou Meta: `_memoria/meta_integration.md`
+- Regras exclusivas do Claude Code neste projeto: `CLAUDE.md`
+- Regras exclusivas do Codex neste projeto: `AGENTS.md`
+
+Quando o usuario fizer uma correcao com intencao permanente, perguntar:
+
+> "Quer que eu salve isso pra nao precisar repetir?"
+
+Editar com cirurgia, sem reformatar toda a memoria nem apagar contexto historico.

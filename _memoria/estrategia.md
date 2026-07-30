@@ -15,7 +15,7 @@ Criar presença digital consistente e produzir conteúdo de marketing de forma r
 ## O que está funcionando
 
 - **Meta Graph API integrada** (18/05/2026) — publica e agenda posts no Instagram e Facebook via script Python
-- **GitHub Actions ativo** — 24 workflows: 3 institucionais, 3 educativos, 5 Dia dos Namorados, 7 da série Sono (24/06 a 10/07), 3 da campanha Anúncio Geral Julho 2026 e 3 da campanha Preço e Acesso Julho 2026
+- **GitHub Actions ativo** — 30 workflows: 3 institucionais, 3 educativos, 5 Dia dos Namorados, 7 da série Sono, 3 da campanha Anúncio Geral Julho 2026, 3 da campanha Preço e Acesso Julho 2026, 3 da campanha Espuma ou Mola e 3 da campanha Facilidade de Pagamento
 - **Agendamento Facebook local** — `facebook_publisher.py schedule_post` funcionando direto do terminal (sem depender de cron)
 - **Série de conteúdo do Sono** — 7 posts educativos sobre qualidade do sono (2 semanas: 24/06–03/07 e 06–10/07/2026). Posts: acorda cansado, dor nas costas, casais brigam, acorda de madrugada, colchão afundando, alergia/espirros, tempo de trocar
 - **Anúncio Geral Julho 2026** — campanha com 3 posts comerciais gerais (06, 08 e 10/07/2026), usando feed + story, agendamento Facebook e workflow Instagram
@@ -24,13 +24,18 @@ Criar presença digital consistente e produzir conteúdo de marketing de forma r
 
 ## Campanhas ativas
 
-- **Série Sono — Semana 2** (06–10/07/2026) — posts em `marketing/conteudo/sono-semana-2/`: colchão afundando (06/07), alergia/espirros (08/07), tempo de trocar (10/07). Workflows: `sono-post5-2026-07-06.yml`, `sono-post6-2026-07-08.yml`, `sono-post7-2026-07-10.yml`
-- **Anúncio Geral Julho 2026** (06–10/07/2026) — posts em `marketing/conteudo/anuncio-geral-2026-07/`: dormir bem (06/07), preço de vizinho (08/07), seu sono merece (10/07). Workflows: `anuncio-geral-post1-2026-07-06.yml`, `anuncio-geral-post2-2026-07-08.yml`, `anuncio-geral-post3-2026-07-10.yml`
-- **Preço e Acesso Julho 2026** (15–20/07/2026) — posts em `marketing/conteudo/preco-acesso-2026-07/`: colchão bom não precisa ser caro (15/07), parcela que cabe no bolso (17/07), colchão pra cada bolso (20/07). Workflows: `preco-acesso-post1-2026-07-15.yml`, `preco-acesso-post2-2026-07-17.yml`, `preco-acesso-post3-2026-07-20.yml`. Facebook agendado (15/07, 17/07, 20/07 às 12h)
-- **Espuma ou Mola Julho 2026** (22–27/07/2026) — posts em `marketing/conteudo/espuma-ou-mola-2026-07/`: espuma ou molas? (22/07), espuma com firmeza de verdade (24/07), molas com maciez que acolhe (27/07). Nessa linha da Colchões e Cia, espuma é a opção mais firme/densa e mola (com pillow-top) é a mais macia — ver [[produto-espuma-vs-mola]]. Como o slot de 20/07 (seg) já estava ocupado pelo post3 de Preço e Acesso, esse ciclo usa qua-sex-seg (22, 24, 27/07) em vez do padrão seg-qua-sex. Workflows: `espuma-mola-post1-2026-07-22.yml`, `espuma-mola-post2-2026-07-24.yml`, `espuma-mola-post3-2026-07-27.yml`. Facebook agendado (22/07, 24/07, 27/07 às 12h). Instagram dispara via GitHub Actions nas mesmas datas (workflows já no `main`)
+- **Facilidade de Pagamento** (29/07–03/08/2026) — 3 posts em `marketing/conteudo/facilidade-pagamento-2026-07/`, com publicação no Instagram via GitHub Actions em 29/07, 31/07 e 03/08. Workflows: `facilidade-pagamento-post1-2026-07-29.yml`, `facilidade-pagamento-post2-2026-07-31.yml`, `facilidade-pagamento-post3-2026-08-03.yml`
+
+## Em desenvolvimento
+
+- **Festa do Peão — Quarto de Visitas** (agosto/2026) — piloto em `marketing/conteudo/festa-peao-visitas-2026-08-piloto/`, com feed, legenda, fundo gerado por IA, prompt e renderizador. Ainda sem evidência de workflow ou agendamento.
 
 ## Campanhas encerradas
 
+- **Espuma ou Mola Julho 2026** (22–27/07/2026) — 3 posts sobre a diferença entre espuma firme/densa e molas macias com pillow-top; arquivos em `marketing/conteudo/espuma-ou-mola-2026-07/`
+- **Preço e Acesso Julho 2026** (15–20/07/2026) — 3 posts em `marketing/conteudo/preco-acesso-2026-07/`
+- **Anúncio Geral Julho 2026** (06–10/07/2026) — 3 posts em `marketing/conteudo/anuncio-geral-2026-07/`
+- **Série Sono — Semana 2** (06–10/07/2026) — 3 posts em `marketing/conteudo/sono-semana-2/`
 - **Série Sono — Semana 1** (24/06–03/07/2026) — posts em `marketing/conteudo/posts-conteudo-sono/`
 - **Dia dos Namorados** (01–13/06/2026)
 - **Seleção de Ofertas** (15/06–01/07/2026) — campanha Meta Ads pausada em 01/07/2026; gerou 40 conversas com investimento de R$ 944,91, segundo `marketing/campanhas/relatorios/2026-07-01-comparativo-namorados-selecao-ofertas.md`

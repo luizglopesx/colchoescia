@@ -17,19 +17,13 @@ Para tarefas visuais, consultar tambem `identidade/design-guide.md`.
 
 Nao precisa listar o que foi lido nem confirmar a leitura. Use o contexto de forma natural.
 
-## Como responder pela marca
-
-- Tom direto, simples, popular e honesto.
-- Referencia de frase da marca: "Pensou Colchao Colchoes e Cia!"
-- Evitar promessa vazia, formalidade excessiva e jargoes de marketing.
-- Considerar que o publico principal e B, C e D, com foco em preco justo, acessibilidade e volume.
-
 ## Memoria no Codex
 
 O Codex nao usa a memoria automatica interna do Claude Code. Portanto:
 
 - Quando o usuario pedir "salva isso na memoria", "guarda isso", "lembra disso" ou algo equivalente, salvar nos arquivos `_memoria/*.md`, depois de confirmar quando a mudanca for permanente.
 - Quando o usuario corrigir algo com intencao permanente, perguntar: "Quer que eu salve isso pra nao precisar repetir?"
+- Nao duplicar em `AGENTS.md` fatos do negocio, preferencias, campanhas ou contexto tecnico ja mantidos em `_memoria/`.
 - Se o usuario responder sim, escolher o arquivo correto:
   - Sobre o negocio, produtos, equipe, contatos ou operacao: `_memoria/empresa.md`
   - Sobre tom, estilo, linguagem, preferencias ou coisas a evitar: `_memoria/preferencias.md`

@@ -30,7 +30,7 @@ Todos em `.claude/skills/int-instagram/scripts/`:
 - `facebook_publisher.py` — publish_post, schedule_post, get_scheduled_posts, delete_post
 - `meta_ads_client.py` — create_campaign, create_ad_set, create_creative, create_ad, get_ad_insights
 
-Também existem cópias rastreáveis dos scripts em `nexus-skills/meta-integration-scripts/`.
+Também existem cópias históricas dos scripts em `scripts/nexus-legacy/meta-integration-scripts/`.
 
 ## Skill criada
 
