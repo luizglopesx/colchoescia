@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #111;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  }
+
+  .feed {
+    width: 1080px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    background: #003a64;
+  }
+
+  .background {
+    position: absolute;
+    inset: 0;
+    background: url("bg-piloto-nano-banana.png") center / cover no-repeat;
+    transform: scale(1.01);
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(0, 27, 48, .92) 0%, rgba(0, 36, 64, .70) 43%, rgba(0, 30, 52, .08) 73%),
+      linear-gradient(0deg, rgba(0, 24, 43, .98) 0%, rgba(0, 28, 49, .12) 31%, rgba(0, 23, 41, .28) 100%);
+  }
+
+  .grain {
+    position: absolute;
+    inset: 0;
+    opacity: .08;
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,.16) 0,
+      rgba(255,255,255,.16) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+    pointer-events: none;
+  }
+
+  .content {
+    position: absolute;
+    inset: 0;
+    padding: 48px 56px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .event-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 22px;
+    color: #fff;
+    background: #00AFEF;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.28);
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .event-tag .star { font-size: 25px; line-height: 1; }
+
+  .logo-wrap {
+    width: 236px;
+    padding: 13px 18px;
+    background: rgba(255,255,255,.96);
+    border-radius: 13px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.28);
+  }
+
+  .logo-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .copy {
+    width: 610px;
+    margin-top: 72px;
+  }
+
+  .eyebrow {
+    margin-bottom: 15px;
+    color: #00AFEF;
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 3px 12px rgba(0,0,0,.7);
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 89px;
+    font-weight: 900;
+    line-height: .94;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    text-shadow:
+      0 4px 0 #004a7b,
+      0 8px 28px rgba(0,0,0,.72);
+  }
+
+  h1 span {
+    display: block;
+    color: #00AFEF;
+  }
+
+  .sub {
+    width: 545px;
+    margin-top: 26px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-shadow: 0 3px 13px rgba(0,0,0,.78);
+  }
+
+  .sub strong { color: #7edfff; }
+
+  .footer {
+    margin: auto -56px 0;
+    min-height: 154px;
+    padding: 25px 56px 29px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 26px;
+    align-items: center;
+    background: rgba(0, 100, 166, .97);
+    border-top: 6px solid #00AFEF;
+  }
+
+  .footer-copy .main {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.15;
+  }
+
+  .footer-copy .address {
+    margin-top: 8px;
+    color: rgba(255,255,255,.86);
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .phone {
+    padding: 17px 26px;
+    color: #fff;
+    background: #00AFEF;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 7px 18px rgba(0,0,0,.22);
+    font-size: 27px;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="feed">
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="grain"></div>
+
+    <div class="content">
+      <div class="top">
+        <div class="event-tag"><span class="star">★</span> Festa do Peão · 20 a 30/08</div>
+        <div class="logo-wrap">
+          <img src="../../../identidade/Logo Cc fundo Transparente.png" alt="Colchões e Cia">
+        </div>
+      </div>
+
+      <div class="copy">
+        <div class="eyebrow">Barretos vai receber muita gente</div>
+        <h1>Vai receber <span>visita?</span></h1>
+        <p class="sub">Prepare a casa. <strong>Troque o colchão antes da Festa.</strong></p>
+      </div>
+
+      <div class="footer">
+        <div class="footer-copy">
+          <div class="main">Quem visita também merece dormir bem.</div>
+          <div class="address">Rua 20 esq. Av. 13 · Centro · Barretos</div>
+        </div>
+        <div class="phone">☎ (17) 3325-6039</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
