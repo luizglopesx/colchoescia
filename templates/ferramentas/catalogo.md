@@ -163,9 +163,17 @@ claude mcp add n8n -- npx -y n8n-mcp
 **Quando usar:** Skills que precisam disparar automacoes externas
 
 ### Supabase
-**O que faz:** Banco de dados e backend completo
-**Precisa de conta:** Sim, projeto Supabase
-**Quando usar:** Skills que precisam guardar dados, autenticacao, backend
+**O que faz:** Banco de dados, autenticacao e storage completo (self-hosted em supabase.senhorcolchao.com)
+**Precisa de conta:** Sim, projeto Supabase (ja configurado)
+**Configurar:** Salvar `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY` e `SUPABASE_STORAGE_BUCKET` no `.env` (nunca commitar essas chaves)
+**Como usar numa skill:**
+```js
+const { getSupabaseClient } = require('./scripts/supabase-client.js');
+const supabase = getSupabaseClient(); // service key por padrao (bypassa RLS)
+```
+**Buckets de storage existentes:** `catalogo` (bruto), `catalogo-fotos-transparente` (fotos de produto com fundo transparente, publico) e `campaign-media`
+**Script pronto:** `node --env-file=.env scripts/supabase-sync-catalogo.js` — sincroniza a pasta local `catalogo fotos transparente/` com o bucket `catalogo-fotos-transparente` (so sobe arquivos novos ou alterados). URLs publicas ficam em `https://supabase.senhorcolchao.com/storage/v1/object/public/catalogo-fotos-transparente/<caminho>`
+**Quando usar:** Skills que precisam guardar dados, autenticacao, backend, ou referenciar fotos de produto por URL publica (posts, anuncios, catalogo) em vez de arquivo local
 
 ### Telegram
 **O que faz:** Envia e recebe mensagens via bot do Telegram
