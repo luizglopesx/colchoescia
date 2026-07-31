@@ -17,6 +17,24 @@ Conforme você for ativando skills, isso aqui vai sendo populado. Lista do que c
 | `/anuncio-google` | (nenhum — gera CSV direto) | — |
 | `/relatorio-ads` | (lê CSV exportado das plataformas) | — |
 
+## supabase-sync-catalogo.js
+
+Sobe fotos novas (ou alteradas) da pasta local `catalogo fotos transparente/` pro bucket Supabase Storage `catalogo-fotos-transparente`. Compara por tamanho — só envia o que for novo ou diferente.
+
+```bash
+node --env-file=.env scripts/supabase-sync-catalogo.js
+```
+
+## sync-catalogo-supabase.mjs
+
+Traz fotos novas (ou alteradas) do bucket Supabase Storage `catalogo-fotos-transparente` pra pasta local `catalogo fotos transparente/`. Compara por eTag/MD5 — só baixa o que for novo ou diferente, nunca apaga nada local.
+
+```bash
+node --env-file=.env scripts/sync-catalogo-supabase.mjs
+```
+
+Os dois scripts usam o mesmo `.env`: `SUPABASE_URL`, `SUPABASE_BUCKET`, `SUPABASE_SERVICE_KEY` (ou `SUPABASE_ANON_KEY` se o bucket for público). Depois de rodar o de download, use `/salvar` pra commitar as fotos novas — nenhum dos dois commita ou dá push sozinho.
+
 ## Pré-requisitos comuns
 
 A maioria dos scripts depende de:

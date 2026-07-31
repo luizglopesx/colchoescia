@@ -5,7 +5,7 @@ const { getSupabaseClient } = require('./supabase-client.js');
 // Sincroniza a pasta local "catalogo fotos transparente" com o bucket do Supabase.
 // Sobe apenas arquivos novos ou com tamanho diferente do que ja esta no bucket.
 const LOCAL_DIR = path.join(__dirname, '..', 'catalogo fotos transparente');
-const BUCKET = process.env.SUPABASE_STORAGE_BUCKET || 'catalogo-fotos-transparente';
+const BUCKET = process.env.SUPABASE_BUCKET || 'catalogo-fotos-transparente';
 
 // Supabase Storage nao aceita chaves com acentos/caracteres nao-ASCII.
 function sanitizeKey(name) {
