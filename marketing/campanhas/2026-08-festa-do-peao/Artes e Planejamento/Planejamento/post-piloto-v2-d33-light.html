@@ -152,6 +152,76 @@
     white-space: nowrap;
   }
 
+  .product {
+    position: absolute;
+    top: 340px;
+    left: 57%;
+    width: 760px;
+    transform: translateX(-50%) rotate(-1deg);
+    z-index: 6;
+    filter: drop-shadow(0 22px 18px rgba(20, 9, 3, .45));
+  }
+
+  .product img {
+    width: 100%;
+    display: block;
+  }
+
+  .price-tag {
+    position: absolute;
+    top: 430px;
+    left: 46px;
+    width: 260px;
+    padding: 12px 10px 16px;
+    transform: rotate(-6deg);
+    color: #fff8e6;
+    background: #b31217;
+    border: 5px solid #fff4dd;
+    box-shadow: 6px 8px 0 #591011;
+    text-align: center;
+    z-index: 7;
+  }
+
+  .price-tag .name {
+    display: block;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgba(255,255,255,.4);
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    line-height: 1.15;
+  }
+
+  .price-tag .from {
+    display: block;
+    color: #ffd9d9;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: line-through;
+  }
+
+  .price-tag .value {
+    display: block;
+    font-family: "Rockwell Extra Bold", "Arial Black", serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: .95;
+  }
+
+  .price-tag .value b {
+    font-size: 58px;
+  }
+
+  .price-tag .terms {
+    display: block;
+    margin-top: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
   .ribbon {
     position: absolute;
     left: 50%;
@@ -274,6 +344,16 @@
       <span class="small">Festa do Peão</span>
       <span class="date">20 a 30/08</span>
       <span class="small">Barretos</span>
+    </div>
+
+    <div class="product">
+      <img src="produtos/produto-d33-light-casal.png" alt="Colchão D33 Light">
+    </div>
+
+    <div class="price-tag">
+      <span class="name">Colchão D33 Light — Casal</span>
+      <span class="value">R$<b>1.190</b></span>
+      <span class="terms">em até 12x sem juros</span>
     </div>
 
     <div class="ribbon">Prepare o quarto antes da Festa</div>
