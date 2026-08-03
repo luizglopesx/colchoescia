@@ -88,4 +88,5 @@ Quando o usuario pedir "salvar", "salva no GitHub", "commit", "push" ou "/salvar
 4. Fazer `git add`, `git commit` e `git push` se o usuario aprovar.
 
 Nunca usar `--force`, `git reset --hard` ou comandos destrutivos sem pedido claro do usuario.
+Nunca versionar o arquivo `.env` nem credenciais: mantê-los locais e confirmados como ignorados pelo Git antes de qualquer commit.
 
