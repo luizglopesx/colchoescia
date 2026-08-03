@@ -1,0 +1,19 @@
+name: Instagram — Festa do Peão D33 Light Solteiro (03/08 18h)
+on:
+  schedule:
+    - cron: '0 21 3 8 *'  # 21h UTC = 18h BRT
+  workflow_dispatch:
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publicar Feed + Story no Instagram
+        env:
+          SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
+          SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
+        run: python3 "marketing/campanhas/2026-08-festa-do-peao/Artes e Planejamento/Planejamento/post_instagram_d33_light_solteiro.py"
