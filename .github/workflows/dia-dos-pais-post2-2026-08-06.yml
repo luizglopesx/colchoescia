@@ -1,4 +1,4 @@
-name: Dia dos Pais — Post 2 (06/08 18h)
+name: Instagram — Dia dos Pais Post 2 (06/08 18h)
 on:
   schedule:
     - cron: '0 21 6 8 *'  # 21h UTC = 18h BRT
@@ -11,12 +11,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Publicar Feed + Story no Instagram e Feed no Facebook
+      - name: Publicar Feed + Story no Instagram
         env:
           SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
           SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
           SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
-          SOCIAL_FACEBOOK_2_LABEL: colchoes_e_cia
-          SOCIAL_FACEBOOK_2_PAGE_ID: "297774650240571"
-          SOCIAL_FACEBOOK_2_PAGE_TOKEN: ${{ secrets.FACEBOOK_COLCHOES_TOKEN }}
         run: python3 "marketing/conteudo/dia-dos-pais-2026-08/post-02-descanso-merecido/post_social.py"
