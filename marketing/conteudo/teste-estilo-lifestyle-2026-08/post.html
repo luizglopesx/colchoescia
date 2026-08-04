@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: #000;
+  }
+
+  .feed {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  /* ===== STYLE A — foto full-bleed + gradiente + headline ===== */
+  .styleA .bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .styleA .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,18,45,0.10) 0%,
+      rgba(0,18,45,0.08) 35%,
+      rgba(0,18,45,0.55) 68%,
+      rgba(0,18,45,0.94) 100%
+    );
+  }
+
+  .styleA .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 76px 76px;
+  }
+
+  .styleA h1 {
+    font-size: 82px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.08;
+    margin-bottom: 26px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  .styleA h1 span { color: #00AFEF; }
+
+  .styleA .sub {
+    font-size: 36px;
+    color: rgba(255,255,255,0.88);
+    line-height: 1.4;
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    max-width: 880px;
+  }
+
+  .styleA .logo-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .styleA .logo-row img { height: 52px; }
+
+  /* ===== STYLE B — foto + cartao navy (altura automatica) + secao branca com icones e CTA ===== */
+  .feed.styleB {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .styleB .photo-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .styleB .bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .styleB .bg-fade {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 220px;
+    background: linear-gradient(to bottom, rgba(0,18,45,0) 0%, rgba(0,18,45,0.65) 100%);
+  }
+
+  .styleB .navy-card {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-top: -56px;
+    background: #0064A6;
+    border-radius: 56px 56px 0 0;
+    padding: 44px 76px 34px;
+  }
+
+  .styleB .icon-badge {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: #00AFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .styleB h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.18;
+  }
+
+  .styleB h1 span { color: #00AFEF; }
+
+  .styleB .white-section {
+    flex: 0 0 auto;
+    background: #fff;
+    padding: 36px 76px 44px;
+  }
+
+  .styleB .icons-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .styleB .icon-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+  }
+
+  .styleB .icon-circle {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 4px solid #00AFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    margin-bottom: 14px;
+    color: #0064A6;
+  }
+
+  .styleB .icon-col p {
+    font-size: 23px;
+    color: #0064A6;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: Arial, sans-serif;
+  }
+
+  .styleB .cta {
+    background: #0064A6;
+    border-radius: 20px;
+    padding: 24px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+  }
+
+  .styleB .cta .text {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .styleB .cta .text b { color: #00AFEF; }
+
+  .styleB .cta img { height: 40px; }
+
+</style>
+</head>
+<body>
+
+<!-- TESTE 1 — Style B — bg-teste-01 (homem dormindo, luz da manha) -->
+<div class="feed styleB" id="teste-01">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-01.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">🛏️</div>
+    <h1>Dormir bem é parte <span>essencial</span> da sua rotina</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🌙</div><p>Mais disposição<br>no dia a dia</p></div>
+      <div class="icon-col"><div class="icon-circle">💤</div><p>Menos dor,<br>mais conforto</p></div>
+      <div class="icon-col"><div class="icon-circle">🙂</div><p>Noites de sono<br>mais tranquilas</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 2 — Style A — bg-teste-02 (mulher dormindo, ambiente noturno) -->
+<div class="feed styleA" id="teste-02">
+  <div class="bg" style="background-image:url('bg-teste-02.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>O colchão certo pode <span>transformar</span> suas noites de sono.</h1>
+    <p class="sub">Na Colchões e Cia, a gente ajuda você a escolher sem enrolação.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 3 — Style A — bg-teste-03 (mascara de dormir, luz do dia) -->
+<div class="feed styleA" id="teste-03">
+  <div class="bg" style="background-image:url('bg-teste-03.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Seu descanso merece <span>atenção</span>.</h1>
+    <p class="sub">Escolha o colchão ideal aqui na Colchões e Cia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 4 — Style B — bg-teste-04 (casal dormindo) -->
+<div class="feed styleB" id="teste-04">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-04.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">❤️</div>
+    <h1>Dormir bem, <span>a dois</span>, é ainda melhor</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🌙</div><p>Mais disposição<br>no dia a dia</p></div>
+      <div class="icon-col"><div class="icon-circle">💤</div><p>Menos dor,<br>mais conforto</p></div>
+      <div class="icon-col"><div class="icon-circle">🙂</div><p>Noites de sono<br>mais tranquilas</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 5 — Style A — bg-teste-05 (detalhe travesseiro/mãos) -->
+<div class="feed styleA" id="teste-05">
+  <div class="bg" style="background-image:url('bg-teste-05.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Cada detalhe do seu <span>sono</span> importa.</h1>
+    <p class="sub">Do colchão ao travesseiro, a Colchões e Cia tem o que você precisa.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 6 — Style A — bg-teste-06 (homem acordando bem) -->
+<div class="feed styleA" id="teste-06">
+  <div class="bg" style="background-image:url('bg-teste-06.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Acordar bem <span>começa</span> na noite anterior.</h1>
+    <p class="sub">Invista no colchão certo e sinta a diferença todos os dias.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 7 — Style B — bg-teste-07 (dormindo em posicao fetal, vista de cima) -->
+<div class="feed styleB" id="teste-07">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-07.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">⏳</div>
+    <h1>Seu colchão tem <span>validade</span>. O seu já venceu?</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🌙</div><p>Mais disposição<br>no dia a dia</p></div>
+      <div class="icon-col"><div class="icon-circle">💤</div><p>Menos dor,<br>mais conforto</p></div>
+      <div class="icon-col"><div class="icon-circle">🙂</div><p>Noites de sono<br>mais tranquilas</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 8 — Style B — bg-teste-08 (mulher dormindo, quarto claro, inspirado na 1a foto de referencia) -->
+<div class="feed styleB" id="teste-08">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-08.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">🛏️</div>
+    <h1>Uma noite bem dormida <span>muda</span> o seu dia</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🌙</div><p>Mais disposição<br>no dia a dia</p></div>
+      <div class="icon-col"><div class="icon-circle">💤</div><p>Menos dor,<br>mais conforto</p></div>
+      <div class="icon-col"><div class="icon-circle">🙂</div><p>Noites de sono<br>mais tranquilas</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 9 — Style A — bg-teste-09 (homem dormindo, ambiente noturno, inspirado na 2a foto de referencia) -->
+<div class="feed styleA" id="teste-09">
+  <div class="bg" style="background-image:url('bg-teste-09.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Sua noite <span>merece</span> mais conforto.</h1>
+    <p class="sub">Venha conhecer o colchão ideal na Colchões e Cia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 10 — Style A — bg-teste-10 (vista de cima, descanso, inspirado na 3a foto de referencia) -->
+<div class="feed styleA" id="teste-10">
+  <div class="bg" style="background-image:url('bg-teste-10.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Descansar bem não é <span>luxo</span>, é necessidade.</h1>
+    <p class="sub">Escolha o colchão certo aqui na Colchões e Cia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 11 — Style B — bg-teste-11 (casal acordando junto, sorrindo) -->
+<div class="feed styleB" id="teste-11">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-11.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">❤️</div>
+    <h1>Acordar bem, <span>juntos</span>, começa aqui</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🛌</div><p>Conforto em<br>qualquer posição</p></div>
+      <div class="icon-col"><div class="icon-circle">🌡️</div><p>Temperatura ideal<br>a noite toda</p></div>
+      <div class="icon-col"><div class="icon-circle">❤️</div><p>Mais qualidade<br>de vida</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 12 — Style A — bg-teste-12 (mulher se espreguicando na cama) -->
+<div class="feed styleA" id="teste-12">
+  <div class="bg" style="background-image:url('bg-teste-12.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Seu corpo agradece <span>cada manhã</span>.</h1>
+    <p class="sub">O colchão certo faz toda a diferença no seu dia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 13 — Style A — bg-teste-13 (cama arrumada, sem pessoas, ambiente) -->
+<div class="feed styleA" id="teste-13">
+  <div class="bg" style="background-image:url('bg-teste-13.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Pensou <span>colchão</span>, pensou Colchões e Cia.</h1>
+    <p class="sub">Do jeito que você merece dormir.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 14 — Style A — bg-teste-14 (homem lendo antes de dormir) -->
+<div class="feed styleA" id="teste-14">
+  <div class="bg" style="background-image:url('bg-teste-14.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Antes de dormir, <span>invista</span> no seu descanso.</h1>
+    <p class="sub">Escolha o colchão ideal aqui na Colchões e Cia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 15 — Style B — bg-teste-15 (casal se aconchegando) -->
+<div class="feed styleB" id="teste-15">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-15.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">❤️</div>
+    <h1>Dormir bem <span>a dois</span> é ainda mais gostoso</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🛌</div><p>Conforto em<br>qualquer posição</p></div>
+      <div class="icon-col"><div class="icon-circle">🌡️</div><p>Temperatura ideal<br>a noite toda</p></div>
+      <div class="icon-col"><div class="icon-circle">❤️</div><p>Mais qualidade<br>de vida</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 16 — Style A — bg-teste-16 (mulher abraçada ao travesseiro de corpo) -->
+<div class="feed styleA" id="teste-16">
+  <div class="bg" style="background-image:url('bg-teste-16.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Conforto de verdade <span>começa</span> no colchão.</h1>
+    <p class="sub">Na Colchões e Cia você encontra o ideal pra você.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 17 — Style A — bg-teste-17 (pes espiando debaixo do cobertor, clima leve) -->
+<div class="feed styleA" id="teste-17">
+  <div class="bg" style="background-image:url('bg-teste-17.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Aquele <span>friozinho</span> gostoso de ficar na cama.</h1>
+    <p class="sub">E de manhã, acordar bem disposto. Vem pra Colchões e Cia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 18 — Style B — bg-teste-18 (casal de idosos dormindo, representatividade) -->
+<div class="feed styleB" id="teste-18">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-18.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">🛏️</div>
+    <h1>Sono bom <span>não tem idade</span></h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">👪</div><p>Para toda<br>a família</p></div>
+      <div class="icon-col"><div class="icon-circle">💪</div><p>Sustentação que<br>dura anos</p></div>
+      <div class="icon-col"><div class="icon-circle">😴</div><p>Sono profundo<br>de verdade</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+<!-- TESTE 19 — Style A — bg-teste-19 (mulher acordando feliz e disposta) -->
+<div class="feed styleA" id="teste-19">
+  <div class="bg" style="background-image:url('bg-teste-19.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Acordar bem <span>disposta</span> não é sorte.</h1>
+    <p class="sub">É o colchão certo. Vem conhecer na Colchões e Cia.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- TESTE 20 — Style B — bg-teste-20 (cama arrumada vista de cima, tons azul/branco, sem pessoas) -->
+<div class="feed styleB" id="teste-20">
+  <div class="photo-wrap">
+    <div class="bg" style="background-image:url('bg-teste-20.png')"></div>
+    <div class="bg-fade"></div>
+  </div>
+  <div class="navy-card">
+    <div class="icon-badge">🛏️</div>
+    <h1>Seu <span>descanso</span> começa aqui</h1>
+  </div>
+  <div class="white-section">
+    <div class="icons-row">
+      <div class="icon-col"><div class="icon-circle">🌙</div><p>Mais disposição<br>no dia a dia</p></div>
+      <div class="icon-col"><div class="icon-circle">💤</div><p>Menos dor,<br>mais conforto</p></div>
+      <div class="icon-col"><div class="icon-circle">🙂</div><p>Noites de sono<br>mais tranquilas</p></div>
+    </div>
+    <div class="cta">
+      <div class="text">📞 (17) 3325-6039<br><b>Escolha o colchão ideal</b></div>
+      <img src="logo-oficial.png">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: #000;
+  }
+
+  /* ===== FEED 1080x1350 — foto full-bleed + gradiente + headline ===== */
+  .feed {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .feed .bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .feed .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,18,45,0.10) 0%,
+      rgba(0,18,45,0.08) 35%,
+      rgba(0,18,45,0.55) 68%,
+      rgba(0,18,45,0.94) 100%
+    );
+  }
+
+  .feed .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 76px 76px;
+  }
+
+  .feed h1 {
+    font-size: 82px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.08;
+    margin-bottom: 26px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  .feed h1 span { color: #00AFEF; }
+
+  .feed .sub {
+    font-size: 36px;
+    color: rgba(255,255,255,0.88);
+    line-height: 1.4;
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    max-width: 880px;
+  }
+
+  .feed .logo-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .feed .logo-row img { height: 52px; }
+
+  /* ===== STORY 1080x1920 — mesma logica, canvas mais alto ===== */
+  .story {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .story .bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .story .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,18,45,0.18) 0%,
+      rgba(0,18,45,0.10) 30%,
+      rgba(0,18,45,0.55) 65%,
+      rgba(0,18,45,0.94) 100%
+    );
+  }
+
+  .story .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 80px 120px;
+  }
+
+  .story h1 {
+    font-size: 88px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.08;
+    margin-bottom: 28px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  .story h1 span { color: #00AFEF; }
+
+  .story .sub {
+    font-size: 40px;
+    color: rgba(255,255,255,0.88);
+    line-height: 1.4;
+    margin-bottom: 52px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+  }
+
+  .story .logo-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .story .logo-row img { height: 56px; }
+
+</style>
+</head>
+<body>
+
+<!-- FEED — copiar este bloco por peça, trocar id, bg-*.png, headline, sub -->
+<div class="feed" id="peca-01">
+  <div class="bg" style="background-image:url('bg-peca-01.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Headline com <span>palavra em destaque</span>.</h1>
+    <p class="sub">Subtítulo curto, uma linha de reforço da mensagem.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+<!-- STORY — opcional, mesma peça em formato vertical -->
+<div class="story" id="peca-01-story">
+  <div class="bg" style="background-image:url('bg-peca-01.png')"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Headline com <span>palavra em destaque</span>.</h1>
+    <p class="sub">Subtítulo curto, uma linha de reforço da mensagem.</p>
+    <div class="logo-row"><img src="logo-oficial-white.png"></div>
+  </div>
+</div>
+
+</body>
+</html>
