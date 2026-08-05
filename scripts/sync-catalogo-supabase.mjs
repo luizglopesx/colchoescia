@@ -3,7 +3,7 @@
 // Uso: node --env-file=.env scripts/sync-catalogo-supabase.js
 
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -50,6 +50,22 @@ async function walk(prefix, files) {
   return files;
 }
 
+// scripts/supabase-sync-catalogo.js (upload) tira acentos dos nomes porque o Storage só aceita ASCII.
+// Aqui, ao baixar, tratamos "Cabeceira California.png" (bucket) e "Cabeceira Califórnia.png" (local,
+// versionado antes do bucket existir) como o mesmo arquivo — senão o download recria uma cópia duplicada.
+function sanitizeAccents(name) {
+  return name.normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
+async function resolveLocalPath(destDir, remoteName) {
+  const exactPath = path.join(destDir, remoteName);
+  if (existsSync(exactPath) || !existsSync(destDir)) return exactPath;
+
+  const siblings = await readdir(destDir);
+  const match = siblings.find((name) => sanitizeAccents(name) === remoteName);
+  return match ? path.join(destDir, match) : exactPath;
+}
+
 async function localMatches(localPath, remoteEtag) {
   if (!existsSync(localPath) || !remoteEtag) return false;
   const buf = await readFile(localPath);
@@ -78,7 +94,10 @@ async function main() {
   let semMudanca = 0;
 
   for (const file of files) {
-    const localPath = path.join(DEST_ROOT, ...file.path.split("/"));
+    const segments = file.path.split("/");
+    const remoteName = segments.pop();
+    const destDir = path.join(DEST_ROOT, ...segments);
+    const localPath = await resolveLocalPath(destDir, remoteName);
     const existiaAntes = existsSync(localPath);
 
     if (await localMatches(localPath, file.etag)) {
