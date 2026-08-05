@@ -40,3 +40,17 @@ Também existem cópias históricas dos scripts em `scripts/nexus-legacy/meta-in
 
 **Why:** Configurado para automatizar os agendamentos da próxima campanha sem precisar acessar o Meta Business Suite manualmente.
 **How to apply:** Ao planejar campanhas, usar a skill `social-post-scheduler` para agendar diretamente. Para campanhas pagas, usar `meta_ads_client.py`.
+
+## Padrão de agendamento (sempre, sem precisar pedir de novo)
+
+Definido em 05/08/2026 — sempre que o usuário pedir pra "agendar" um post, usar
+por padrão, sem precisar que ele repita a instrução:
+
+- **Facebook:** `facebook_publisher.py schedule_post` direto na API (agendamento
+  nativo do Facebook funciona bem).
+- **Instagram:** GitHub Actions cron + script Python que publica na hora
+  (feed + story juntos). **Nunca** usar `schedule_photo` do Instagram — o
+  endpoint existe na API mas é instável.
+
+Ver `[[agendamento-instagram-github]]` na memória pessoal do Claude Code para
+o template completo do workflow YAML e do script Python.
