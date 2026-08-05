@@ -1,0 +1,19 @@
+name: Instagram — Promoção Festa do Peão Post 2 (12/08 11h)
+on:
+  schedule:
+    - cron: '0 14 12 8 *'  # 14h UTC = 11h BRT
+  workflow_dispatch:
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publicar Feed + Story no Instagram
+        env:
+          SOCIAL_INSTAGRAM_2_LABEL: colchoes_e_cia
+          SOCIAL_INSTAGRAM_2_ACCOUNT_ID: "17841400910282540"
+          SOCIAL_INSTAGRAM_2_PAGE_TOKEN: ${{ secrets.INSTAGRAM_COLCHOES_TOKEN }}
+        run: python3 "marketing/conteudo/festa-peao-promocao-2026-08/post-02-aproveite-enquanto-dura/post_social.py"
